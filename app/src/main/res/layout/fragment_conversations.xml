@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootConversations"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/unify_background"
+    android:orientation="vertical"
+    android:paddingTop="18dp">
+
+    <TextView
+        android:id="@+id/textConversationsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/screen_padding"
+        android:paddingEnd="@dimen/screen_padding"
+        android:text="@string/conversations"
+        android:textColor="@color/unify_text_primary"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textConversationsSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:paddingStart="@dimen/screen_padding"
+        android:paddingEnd="@dimen/screen_padding"
+        android:text="@string/start_chat_hint"
+        android:textColor="@color/unify_text_secondary"
+        android:textSize="13sp" />
+
+    <ProgressBar
+        android:id="@+id/progressConversations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="22dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textNoConversations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="24dp"
+        android:text="@string/no_conversations_found"
+        android:textColor="@color/unify_text_secondary"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerConversations"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:padding="16dp" />
+
+</LinearLayout>

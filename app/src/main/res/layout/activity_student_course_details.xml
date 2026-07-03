@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/unify_background"
+    android:orientation="vertical">
+
+    <!-- Header -->
+    <LinearLayout
+        android:id="@+id/layoutCourseHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/unify_surface"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/screen_padding"
+        android:paddingTop="@dimen/space_md"
+        android:paddingEnd="@dimen/screen_padding">
+
+        <!-- Top bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/buttonBack"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/back"
+                android:src="@drawable/ic_arrow_back"
+                android:tint="@color/unify_text_primary" />
+
+            <TextView
+                android:id="@+id/textHeaderTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/course"
+                android:textColor="@color/unify_text_primary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textCourseInfo"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:contentDescription="@string/course_info"
+                android:gravity="center"
+                android:text="ⓘ"
+                android:textColor="@color/unify_text_primary"
+                android:textSize="28sp" />
+
+        </LinearLayout>
+
+        <!-- Moodle-like course hero -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="16dp"
+            android:paddingBottom="18dp">
+
+            <FrameLayout
+                android:layout_width="104dp"
+                android:layout_height="104dp"
+                android:background="@drawable/bg_course_thumb">
+
+                <TextView
+                    android:id="@+id/textCourseInitial"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/course_default_initial"
+                    android:textColor="@color/white"
+                    android:textSize="42sp"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textCourseTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_weight="1"
+                android:lineSpacingExtra="3dp"
+                android:text="@string/course"
+                android:textColor="@color/unify_text_primary"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+        <!-- Tabs -->
+        <LinearLayout
+            android:id="@+id/layoutTabs"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tabCourse"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/course"
+                android:textColor="@color/unify_blue"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tabParticipants"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/participants"
+                android:textColor="@color/unify_text_secondary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tabGrades"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/grades"
+                android:textColor="@color/unify_text_secondary"
+                android:textSize="16sp" />
+
+
+
+        </LinearLayout>
+
+        <!-- Underline: no percentages, clean weights -->
+        <LinearLayout
+            android:id="@+id/layoutUnderlineContainer"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/tabUnderlineCourse"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/unify_gold" />
+
+            <View
+                android:id="@+id/tabUnderlineParticipants"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent" />
+
+            <View
+                android:id="@+id/tabUnderlineGrades"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Body -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:paddingTop="22dp">
+
+        <LinearLayout
+            android:id="@+id/layoutContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/screen_padding"
+            android:paddingEnd="@dimen/screen_padding"
+            android:paddingBottom="24dp">
+
+            <!-- Course info content -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardCourseInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/unify_surface"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/unify_border"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="22dp">
+
+                    <TextView
+                        android:id="@+id/textSectionTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_expanded"
+                        android:textColor="@color/unify_text_primary"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="22dp"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/no_description_available"
+                        android:textColor="@color/unify_text_primary"
+                        android:textSize="16sp"
+                        android:textStyle="italic" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="22dp"
+                        android:background="@color/unify_border" />
+
+                    <TextView
+                        android:id="@+id/textInstructor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:text="@string/not_available_short"
+                        android:textColor="@color/unify_text_primary"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textDepartment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/not_available_short"
+                        android:textColor="@color/unify_text_secondary"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textSection"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/not_available_short"
+                        android:textColor="@color/unify_text_secondary"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textCourseMeta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/bg_course_chip"
+                        android:paddingStart="12dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="12dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/not_available_short"
+                        android:textColor="@color/unify_blue"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/dividerCourseAnnouncements"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="22dp"
+                        android:background="@color/unify_border" />
+
+                    <TextView
+                        android:id="@+id/textCourseAnnouncementsTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:text="@string/course_announcements"
+                        android:textColor="@color/unify_text_primary"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <ProgressBar
+                        android:id="@+id/progressCourseAnnouncements"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="16dp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/textCourseAnnouncementsEmpty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:gravity="center"
+                        android:text="@string/no_course_announcements_found"
+                        android:textColor="@color/unify_text_secondary"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerCourseAnnouncements"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:nestedScrollingEnabled="false" />
+
+                    <View
+                        android:id="@+id/dividerCourseMaterials"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="22dp"
+                        android:background="@color/unify_border" />
+
+                    <TextView
+                        android:id="@+id/cardMaterials"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:background="@drawable/bg_dashboard_card"
+                        android:padding="20dp"
+                        android:text="@string/course_materials"
+                        android:textAlignment="center"
+                        android:textColor="@color/unify_text_primary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/cardChatInstructor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/bg_dashboard_card"
+                        android:padding="20dp"
+                        android:text="@string/chat_with_instructor"
+                        android:textAlignment="center"
+                        android:textColor="@color/unify_text_primary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/cardCourseChat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/bg_dashboard_card"
+                        android:padding="20dp"
+                        android:text="@string/course_group_chat"
+                        android:textAlignment="center"
+                        android:textColor="@color/unify_text_primary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Participants content: placeholder for now, full list next -->
+            <LinearLayout
+                android:id="@+id/layoutParticipantsContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutParticipantSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/search_participants"
+                    app:boxBackgroundColor="@color/unify_surface"
+                    app:boxCornerRadiusBottomEnd="@dimen/radius_lg"
+                    app:boxCornerRadiusBottomStart="@dimen/radius_lg"
+                    app:boxCornerRadiusTopEnd="@dimen/radius_lg"
+                    app:boxCornerRadiusTopStart="@dimen/radius_lg"
+                    app:boxStrokeColor="@color/unify_border">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editParticipantSearch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:textColor="@color/unify_text_primary"
+                        android:textColorHint="@color/unify_text_secondary" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ProgressBar
+                    android:id="@+id/progressParticipants"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/textParticipantsEmpty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="@string/no_participants_found"
+                    android:textColor="@color/unify_text_secondary"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerParticipants"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:nestedScrollingEnabled="false" />
+
+            </LinearLayout>
+
+            <!-- Grades content: placeholder for now -->
+            <LinearLayout
+                android:id="@+id/layoutGradesContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/unify_surface"
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="0dp"
+                    app:strokeColor="@color/unify_border"
+                    app:strokeWidth="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="22dp">
+
+                        <TextView
+                            android:id="@+id/textGradeTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/your_grade"
+                            android:textColor="@color/unify_text_primary"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <ProgressBar
+                            android:id="@+id/progressGrade"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/textGradeValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="18dp"
+                            android:gravity="center"
+                            android:text="@string/grade_not_available"
+                            android:textColor="@color/unify_blue"
+                            android:textSize="34sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textGradeStatus"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="18dp"
+                            android:text="@string/not_available_short"
+                            android:textColor="@color/unify_text_primary"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/textGradeCourseCode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/not_available_short"
+                            android:textColor="@color/unify_text_secondary"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/textGradeSemester"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/not_available_short"
+                            android:textColor="@color/unify_text_secondary"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/textGradeAcademicYear"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/not_available_short"
+                            android:textColor="@color/unify_text_secondary"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- App -->
+    <string name="app_name">Unify</string>
+
+    <!-- Common -->
+    <string name="ok">موافق</string>
+    <string name="cancel">إلغاء</string>
+    <string name="next">التالي</string>
+    <string name="back">رجوع</string>
+    <string name="continue_text">متابعة</string>
+    <string name="skip">تخطي</string>
+    <string name="save">حفظ</string>
+    <string name="close">إغلاق</string>
+
+    <!-- Auth -->
+    <string name="welcome">مرحبًا</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="register">إنشاء حساب</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="password">كلمة المرور</string>
+    <string name="confirm_password">تأكيد كلمة المرور</string>
+    <string name="full_name">الاسم الكامل</string>
+    <string name="student_id">الرقم الجامعي</string>
+    <string name="forgot_password">هل نسيت كلمة المرور؟</string>
+
+
+
+    <!-- Home / General -->
+    <string name="home">الرئيسية</string>
+    <string name="profile">الملف الشخصي</string>
+    <string name="settings">الإعدادات</string>
+    <string name="notifications">الإشعارات</string>
+    <string name="search">بحث</string>
+
+    <!-- Splash -->
+    <string name="splash_tagline">تطبيق الجامعة</string>
+
+    <!-- Validation / Messages -->
+
+
+    <string name="error_general">حدث خطأ ما</string>
+
+    <string name="onboarding_title_1">مرحبًا بك في Unify</string>
+    <string name="onboarding_desc_1">كل ما تحتاجه لحياتك الجامعية في تطبيق ذكي واحد.</string>
+
+    <string name="onboarding_title_2">ابقَ على تواصل مباشر</string>
+    <string name="onboarding_desc_2">تحدّث مع الدكاترة، وانضم إلى مجموعات الطلاب، وابقَ متصلًا في أي وقت.</string>
+
+    <string name="onboarding_title_3">أدر مقرراتك بسهولة</string>
+    <string name="onboarding_desc_3">تابع المقررات والحضور والتحديثات الأكاديمية المهمة في مكان واحد.</string>
+
+    <string name="onboarding_title_4">ابقَ على اطلاع كل يوم</string>
+    <string name="onboarding_desc_4">احصل على الإعلانات والتذكيرات والأدوات الجامعية المفيدة بدون فوضى.</string>
+
+    <string name="get_started">ابدأ الآن</string>
+
+    <string name="login_title">مرحبًا بعودتك</string>
+    <string name="login_subtitle">سجّل الدخول للمتابعة في رحلتك الجامعية مع Unify.</string>
+    <string name="email_hint">أدخل بريدك الإلكتروني</string>
+    <string name="password_hint">أدخل كلمة المرور</string>
+    <string name="dont_have_account">ليس لديك حساب؟</string>
+    <string name="sign_up">إنشاء حساب</string>
+    <string name="sign_in">تسجيل الدخول</string>
+    <string name="error_empty_email">البريد الإلكتروني مطلوب</string>
+    <string name="error_empty_password">كلمة المرور مطلوبة</string>
+    <string name="error_invalid_email">يرجى إدخال بريد إلكتروني صحيح</string>
+
+    <string name="register_title">أنشئ حسابك</string>
+    <string name="register_subtitle">انضم إلى Unify واجعل حياتك الجامعية أبسط وأكثر ذكاءً.</string>
+    <string name="create_account">إنشاء حساب</string>
+    <string name="already_have_account">لديك حساب بالفعل؟</string>
+    <string name="error_empty_full_name">الاسم الكامل مطلوب</string>
+    <string name="error_password_short">يجب أن تكون كلمة المرور 6 أحرف على الأقل</string>
+    <string name="error_confirm_password">كلمتا المرور غير متطابقتين</string>
+
+    <string name="language_en">EN</string>
+    <string name="language_ar">AR</string>
+    <string name="switch_language">تغيير اللغة</string>
+
+    <string name="step_personal">البيانات الشخصية</string>
+    <string name="step_academic">البيانات الأكاديمية</string>
+    <string name="step_account">بيانات الحساب</string>
+
+    <string name="first_name">الاسم الأول</string>
+    <string name="last_name">اسم العائلة</string>
+    <string name="faculty">الكلية</string>
+    <string name="major">الاختصاص</string>
+    <string name="phone_number">رقم الهاتف</string>
+
+    <string name="register_student">التسجيل كطالب</string>
+    <string name="register_student_subtitle">أنشئ حسابك الطلابي وانتظر موافقة مسؤول الكلية.</string>
+
+    <string name="error_empty_first_name">الاسم الأول مطلوب</string>
+    <string name="error_empty_last_name">اسم العائلة مطلوب</string>
+    <string name="error_empty_student_id">الرقم الجامعي مطلوب</string>
+    <string name="error_empty_faculty">الكلية مطلوبة</string>
+    <string name="error_empty_major">الاختصاص مطلوب</string>
+    <string name="error_empty_phone">رقم الهاتف مطلوب</string>
+    <string name="error_select_faculty_first">يرجى اختيار الكلية أولاً</string>
+
+    <string name="error_account_pending_approval">حسابك بانتظار موافقة مسؤول الكلية.</string>
+    <string name="loading">تحميل</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="error_login_failed">فشل تسجيل الدخول</string>
+    <string name="error_user_data_not_found">لم يتم العثور على بيانات المستخدم</string>
+    <string name="error_failed_loading_user_data">فشل تحميل بيانات المستخدم</string>
+    <string name="error_account_inactive">حسابك غير نشط.</string>
+    <string name="forgot_password_coming_soon">ميزة استعادة كلمة المرور ستتوفر قريبًا</string>
+    <string name="home_welcome">مرحبًا، %1$s</string>
+    <string name="home_email">البريد الإلكتروني: %1$s</string>
+    <string name="home_faculty">الكلية: %1$s</string>
+    <string name="home_major">الاختصاص: %1$s</string>
+
+    <string name="pending_approval_title">تم إرسال التسجيل</string>
+    <string name="pending_approval_message">تم إنشاء حسابك بنجاح وهو الآن بانتظار موافقة الكلية أو الإدارة. ستتمكن من تسجيل الدخول بعد الموافقة على الحساب.</string>
+    <string name="back_to_login">العودة إلى تسجيل الدخول</string>
+
+
+    <string name="error_select_faculty">يرجى اختيار الكلية</string>
+    <string name="error_select_major">يرجى اختيار الاختصاص</string>
+    <string name="error_required">هذا الحقل مطلوب</string>
+
+
+    <string name="error_loading_faculties">فشل تحميل الكليات</string>
+    <string name="error_loading_majors">فشل تحميل الاختصاصات</string>
+    <string name="error_password_mismatch">كلمتا المرور غير متطابقتين</string>
+    <string name="error_registration_timeout">انتهت مهلة التسجيل. يرجى المحاولة مرة أخرى.</string>
+    <string name="error_failed_saving_user">فشل حفظ بيانات المستخدم</string>
+    <string name="error_registration_failed">فشل إنشاء الحساب</string>
+
+    <string name="announcements">الإعلانات</string>
+    <string name="courses">المواد</string>
+
+    <string name="home_subtitle">مرحبًا بك في مساحتك الجامعية.</string>
+    <string name="announcements_coming_soon">شاشة الإعلانات ستتوفر قريبًا</string>
+    <string name="courses_coming_soon">شاشة المواد ستتوفر قريبًا</string>
+
+    <string name="profile_name_value">الاسم: %1$s</string>
+    <string name="profile_email_value">البريد الإلكتروني: %1$s</string>
+    <string name="profile_faculty_value">الكلية: %1$s</string>
+    <string name="profile_major_value">الاختصاص: %1$s</string>
+    <string name="profile_student_id_value">الرقم الجامعي: %1$s</string>
+    <string name="profile_phone_value">رقم الهاتف: %1$s</string>
+
+    <string name="home_hello">مرحبًا</string>
+    <string name="home_hello_user">مرحبًا، %1$s</string>
+    <string name="home_faculty_major">%1$s • %2$s</string>
+    <string name="home_quick_actions">اختصارات سريعة</string>
+    <string name="home_quick_actions_subtitle">انتقل بسرعة إلى أهم أقسام مساحتك الطلابية.</string>
+
+    <string name="attendance">الحضور</string>
+    <string name="attendance_coming_soon">شاشة الحضور ستتوفر قريبًا</string>
+
+    <string name="home_announcements_desc">اطّلع على آخر أخبار الجامعة والتحديثات.</string>
+    <string name="home_courses_desc">اعرض موادك ومعلوماتك الأكاديمية.</string>
+    <string name="home_attendance_desc">تابع حضورك وسجلات الجلسات.</string>
+    <string name="home_profile_desc">افتح ملفك الشخصي وتفاصيل حسابك.</string>
+
+    <string name="announcements_subtitle">آخر التحديثات والأخبار الجامعية الخاصة بك.</string>
+    <string name="no_announcements_found">لا توجد إعلانات بعد.</string>
+    <string name="error_loading_announcements">فشل تحميل الإعلانات</string>
+    <string name="general_announcement">إعلان عام</string>
+    <string name="pinned_announcement">إعلان مثبت</string>
+    <string name="course_chip_value">المادة: %1$s</string>
+
+    <string name="created_by_value">تم الإنشاء بواسطة: %1$s</string>
+    <string name="announcement_date_value">التاريخ: %1$s</string>
+    <string name="not_available_short">غير متوفر</string>
+
+    <string name="courses_subtitle">موادك الأكاديمية ومعلومات الصفوف الخاصة بك.</string>
+    <string name="no_courses_found">لا توجد مواد بعد.</string>
+    <string name="error_loading_courses">فشل تحميل المواد</string>
+    <string name="section_value">الشعبة: %1$s</string>
+    <string name="department_value">القسم: %1$s</string>
+    <string name="faculty_value">الكلية: %1$s</string>
+    <string name="instructor_id_value">معرّف الأستاذ: %1$s</string>
+    <string name="academic_year_value">السنة الأكاديمية: %1$s</string>
+    <string name="semester_value">الفصل: %1$s</string>
+    <string name="course_id_value">معرّف المادة: %1$s</string>
+
+    <string name="admin_dashboard">لوحة الإدارة</string>
+    <string name="admin_dashboard_subtitle">إدارة الموافقات والبيانات الجامعية الأساسية.</string>
+    <string name="admin_welcome_title">مرحبًا بك في مساحة الإدارة</string>
+    <string name="admin_welcome_subtitle">ابدأ بمراجعة تسجيلات الطلاب المعلّقة وإدارة الإعداد الأكاديمي.</string>
+
+    <string name="pending_users">المستخدمون المعلّقون</string>
+    <string name="pending_users_subtitle">راجع ووافق على الطلاب المسجلين حديثًا.</string>
+    <string name="no_pending_users_found">لا يوجد مستخدمون معلّقون.</string>
+    <string name="error_loading_pending_users">فشل تحميل المستخدمين المعلّقين</string>
+    <string name="approve">موافقة</string>
+    <string name="user_approved_successfully">تمت الموافقة على المستخدم بنجاح</string>
+    <string name="error_approving_user">فشل الموافقة على المستخدم</string>
+
+    <string name="faculties">الكليات</string>
+    <string name="faculties_subtitle">إدارة كليات الجامعة والبنية الأكاديمية.</string>
+    <string name="no_faculties_found">لا توجد كليات.</string>
+    <string name="add_faculty">إضافة كلية</string>
+    <string name="faculty_name">اسم الكلية</string>
+    <string name="faculty_added_successfully">تمت إضافة الكلية بنجاح</string>
+    <string name="error_adding_faculty">فشل إضافة الكلية</string>
+    <string name="faculty_deleted_successfully">تم حذف الكلية بنجاح</string>
+    <string name="error_deleting_faculty">فشل حذف الكلية</string>
+    <string name="faculty_id_value">معرّف الكلية: %1$s</string>
+
+    <string name="faculty_code">رمز الكلية</string>
+    <string name="faculty_code_value">الرمز: %1$s</string>
+    <string name="delete">حذف</string>
+
+    <string name="majors">الاختصاصات</string>
+    <string name="majors_subtitle">إدارة الاختصاصات وربطها بالكليات.</string>
+    <string name="no_majors_found">لا توجد اختصاصات.</string>
+    <string name="add_major">إضافة اختصاص</string>
+    <string name="major_name">اسم الاختصاص</string>
+    <string name="major_code">رمز الاختصاص</string>
+    <string name="select_faculty">اختر الكلية</string>
+    <string name="add_faculty_first">يرجى إضافة كلية أولًا</string>
+    <string name="major_added_successfully">تمت إضافة الاختصاص بنجاح</string>
+    <string name="error_adding_major">فشل إضافة الاختصاص</string>
+    <string name="major_deleted_successfully">تم حذف الاختصاص بنجاح</string>
+    <string name="error_deleting_major">فشل حذف الاختصاص</string>
+    <string name="major_code_value">الرمز: %1$s</string>
+    <string name="major_faculty_value">الكلية: %1$s</string>
+    <string name="major_id_value">معرّف الاختصاص: %1$s</string>
+
+    <string name="reject">رفض</string>
+    <string name="reject_user">رفض المستخدم</string>
+    <string name="reject_user_confirmation">هل أنت متأكد أنك تريد رفض هذا المستخدم المعلّق وحذفه؟</string>
+    <string name="user_rejected_successfully">تم رفض المستخدم بنجاح</string>
+    <string name="error_rejecting_user">فشل رفض المستخدم</string>
+
+    <string name="faculty_admins">مسؤولو الكليات</string>
+    <string name="faculty_admins_subtitle">تعيين وإدارة مسؤولي الكليات لكل كلية.</string>
+    <string name="no_faculty_admins_found">لا توجد كليات.</string>
+    <string name="assign_faculty_admin">تعيين مسؤول كلية</string>
+    <string name="faculty_admin_assigned_successfully">تم تعيين مسؤول الكلية بنجاح</string>
+    <string name="error_assigning_faculty_admin">فشل تعيين مسؤول الكلية</string>
+    <string name="remove_faculty_admin">إزالة مسؤول الكلية</string>
+    <string name="remove_faculty_admin_confirmation">هل أنت متأكد أنك تريد إزالة تعيين مسؤول الكلية؟</string>
+    <string name="faculty_admin_removed_successfully">تمت إزالة مسؤول الكلية بنجاح</string>
+    <string name="error_removing_faculty_admin">فشل إزالة مسؤول الكلية</string>
+    <string name="assigned_admin_value">المسؤول المعيّن: %1$s</string>
+    <string name="no_faculty_admin_assigned">لا يوجد مسؤول كلية معيّن</string>
+    <string name="select_user">اختر مستخدمًا</string>
+    <string name="error_select_user">يرجى اختيار مستخدم</string>
+    <string name="remove">إزالة</string>
+    <string name="unknown_user">مستخدم غير معروف</string>
+
+    <string name="add_faculty_admin">إضافة مسؤول كلية</string>
+    <string name="faculty_admin_added_successfully">تمت إضافة مسؤول الكلية بنجاح</string>
+    <string name="error_adding_faculty_admin">فشل إضافة مسؤول الكلية</string>
+    <string name="faculty_admin_deleted_successfully">تم حذف مسؤول الكلية بنجاح</string>
+    <string name="error_deleting_faculty_admin">فشل حذف مسؤول الكلية</string>
+    <string name="employee_id">الرقم الوظيفي</string>
+    <string name="employee_id_value">الرقم الوظيفي: %1$s</string>
+
+    <string name="error_loading_users">حدث خطأ أثناء تحميل المستخدمين</string>
+    <string name="error_loading_faculty_admins">حدث خطأ أثناء تحميل مشرفي الكلية</string>
+
+    <string name="error_email_already_exists">البريد الإلكتروني مستخدم مسبقًا.</string>
+    <string name="error_faculty_admin_already_exists">تم تعيين مدير لهذه الكلية مسبقًا.</string>
+    <string name="error_checking_faculty_admin">تعذر التحقق من بيانات مدير الكلية.</string>
+    <string name="confirm_delete_faculty_admin">هل تريد بالتأكيد حذف مدير الكلية هذا؟</string>
+
+    <string name="error_faculty_name_already_exists">اسم الكلية موجود بالفعل.</string>
+    <string name="error_faculty_code_already_exists">رمز الكلية موجود بالفعل.</string>
+    <string name="error_checking_faculty_data">حدث خطأ أثناء التحقق من بيانات الكلية.</string>
+    <string name="error_cannot_delete_faculty_with_admin">لا يمكن حذف كلية لديها مدير بالفعل.</string>
+    <string name="confirm_delete_faculty">هل أنت متأكد أنك تريد حذف هذه الكلية؟</string>
+
+
+    <string name="loading_dashboard">جاري تحميل لوحة التحكم...</string>
+    <string name="dashboard_loaded_successfully">تم تحميل لوحة التحكم بنجاح.</string>
+    <string name="error_loading_dashboard">حدث خطأ أثناء تحميل بيانات لوحة التحكم.</string>
+    <string name="students">الطلاب</string>
+    <string name="instructors">الأساتذة</string>
+    <string name="no_pending_students_found">لا يوجد طلاب بانتظار الموافقة.</string>
+    <string name="error_faculty_not_assigned">لم يتم تعيين كلية لهذا المدير.</string>
+
+    <string name="error_major_name_already_exists">اسم هذا الاختصاص موجود بالفعل في كليتك.</string>
+    <string name="error_major_code_already_exists">رمز هذا الاختصاص موجود بالفعل في كليتك.</string>
+    <string name="error_checking_major_data">حدث خطأ أثناء التحقق من بيانات الاختصاص.</string>
+    <string name="confirm_delete_major">هل أنت متأكد أنك تريد حذف هذا الاختصاص؟</string>
+
+    <string name="error_empty_study_year">يرجى اختيار السنة الدراسية.</string>
+
+    <string name="add_instructor">إضافة أستاذ</string>
+    <string name="no_instructors_found">لا يوجد أساتذة.</string>
+    <string name="error_loading_instructors">حدث خطأ أثناء تحميل الأساتذة.</string>
+    <string name="error_checking_instructor_data">حدث خطأ أثناء التحقق من بيانات الأستاذ.</string>
+    <string name="instructor_added_successfully">تمت إضافة الأستاذ بنجاح.</string>
+    <string name="error_adding_instructor">حدث خطأ أثناء إضافة الأستاذ.</string>
+    <string name="confirm_delete_instructor">هل أنت متأكد أنك تريد حذف هذا الأستاذ؟</string>
+    <string name="instructor_deleted_successfully">تم حذف الأستاذ بنجاح.</string>
+    <string name="error_deleting_instructor">حدث خطأ أثناء حذف الأستاذ.</string>
+
+    <string name="assign_instructor">تعيين أستاذ</string>
+    <string name="select_instructor">اختر الأستاذ</string>
+    <string name="error_select_instructor">يرجى اختيار الأستاذ.</string>
+    <string name="instructor_assigned_successfully">تم تعيين الأستاذ بنجاح.</string>
+    <string name="error_assigning_instructor">حدث خطأ أثناء تعيين الأستاذ.</string>
+    <string name="instructor_value">الأستاذ: %1$s</string>
+    <string name="study_year_value">السنة الدراسية: %1$s</string>
+
+
+    <string name="add_course">إضافة مادة</string>
+    <string name="course_title">اسم المادة</string>
+    <string name="course_code">رمز المادة</string>
+    <string name="select_major">اختر الاختصاص</string>
+    <string name="academic_year">السنة الأكاديمية</string>
+    <string name="description">الوصف</string>
+    <string name="section">الشعبة</string>
+    <string name="semester">الفصل الدراسي</string>
+    <string name="study_year">السنة الدراسية</string>
+    <string name="error_select_study_year">يرجى اختيار السنة الدراسية.</string>
+    <string name="error_course_code_already_exists">رمز هذه المادة موجود بالفعل في كليتك.</string>
+    <string name="error_checking_course_data">حدث خطأ أثناء التحقق من بيانات المادة.</string>
+    <string name="course_added_successfully">تمت إضافة المادة بنجاح.</string>
+    <string name="error_adding_course">حدث خطأ أثناء إضافة المادة.</string>
+    <string name="add_major_first">يرجى إضافة اختصاص أولًا.</string>
+
+    <string name="role">الدور</string>
+
+    <string name="error_loading_profile">حدث خطأ أثناء تحميل الملف الشخصي.</string>
+
+    <string name = "edit">تعديل</string>
+    <string name="hello_blank_fragment">hello blank page</string>
+
+    <string name="credits">عدد الساعات</string>
+    <string name="error_invalid_credits">يجب أن يكون عدد الساعات أكبر من 0</string>
+
+    <string name="temporary_password">كلمة مرور مؤقتة</string>
+    <string name="faculty_admin_created">تم إنشاء مسؤول الكلية بنجاح</string>
+    <string name="copy_credentials">نسخ بيانات الدخول</string>
+    <string name="credentials">بيانات الدخول</string>
+    <string name="complete_profile_required">يرجى إكمال الملف الشخصي أولاً</string>
+
+    <string name="complete_profile">إكمال الملف الشخصي</string>
+    <string name="complete_profile_subtitle">يرجى إكمال معلوماتك واختيار كلمة مرور جديدة قبل المتابعة.</string>
+    <string name="save_profile">حفظ الملف الشخصي</string>
+    <string name="new_password">كلمة المرور الجديدة</string>
+    <string name="profile_completed_successfully">تم إكمال الملف الشخصي بنجاح</string>
+    <string name="error_update_password">تعذر تحديث كلمة المرور. يرجى تسجيل الدخول مجددًا والمحاولة.</string>
+    <string name="error_complete_profile">تعذر إكمال الملف الشخصي. يرجى المحاولة مرة أخرى.</string>
+
+
+    <string name="course_already_exists">هذه المادة موجودة مسبقًا لنفس الشعبة والفصل والسنة الأكاديمية.</string>
+    <string name="current_faculty">الكلية الحالية</string>
+
+    <string name="credits_must_be_positive">يجب أن يكون عدد الأرصدة أكبر من صفر</string>
+    <string name="error_network">حدث خطأ في الاتصال. حاول مرة أخرى.</string>
+
+    <string name="course_basic_info">المعلومات الأساسية</string>
+    <string name="course_schedule_info">معلومات الفصل والسنة</string>
+    <string name="course_description_info">الوصف</string>
+
+
+    <string name="temporary_password_message">أعطي كلمة المرور هذه للمدرّس. يجب تغييرها بعد تسجيل الدخول:</string>
+
+    <string name="select_course">اختر المادة</string>
+    <string name="error_select_course">يرجى اختيار المادة</string>
+
+    <string name="edit_major">تعديل الاختصاص</string>
+    <string name="error_updating_major">خطأ أثناء تعديل الاختصاص</string>
+
+    <string name="passwords_do_not_match">كلمتا المرور غير متطابقتين</string>
+
+    <string name="error_completing_profile">حدث خطأ أثناء إكمال الملف الشخصي</string>
+
+
+    <string name="welcome_user">مرحبًا، %1$s 👋</string>
+    <string name="instructor">المدرّس</string>
+    <string name="instructor_home_subtitle">إدارة المواد والحضور والإعلانات من مكان واحد.</string>
+
+    <string name="quick_actions">إجراءات سريعة</string>
+    <string name="instructor_quick_actions_hint">افتح المواد لإدارة الطلاب، بدء جلسات الحضور، ونشر الإعلانات.</string>
+
+    <string name="my_courses">موادي</string>
+    <string name="instructor_courses_subtitle">اعرض المواد المخصصة لك وقم بإدارة أنشطة الصف.</string>
+    <string name="major_not_available">الاختصاص غير متوفر</string>
+    <string name="credits_value">%1$s أرصدة</string>
+
+    <string name="manage_students">إدارة الطلاب</string>
+
+    <string name="course_students">طلاب المادة</string>
+    <string name="course_students_subtitle">الطلاب المسجلون في هذه المادة.</string>
+    <string name="no_students_found">لا يوجد طلاب</string>
+    <string name="error_loading_students">حدث خطأ أثناء تحميل الطلاب</string>
+    <string name="error_course_not_found">المادة غير موجودة</string>
+    <string name="unknown_student">طالب غير معروف</string>
+    <string name="student_number_value">رقم الطالب: %1$s</string>
+
+    <string name="enrolled_students">الطلاب المسجلون</string>
+
+    <string name="course_announcements_subtitle">إنشاء وعرض الإعلانات الخاصة بهذه المادة.</string>
+
+    <string name="add_announcement">إضافة إعلان</string>
+    <string name="announcement_title">عنوان الإعلان</string>
+    <string name="announcement_body">نص الإعلان</string>
+
+    <string name="error_creating_announcement">حدث خطأ أثناء إنشاء الإعلان</string>
+    <string name="pinned">مثبّت</string>
+
+    <string name="confirm_delete_announcement">هل أنت متأكد أنك تريد حذف هذا الإعلان؟</string>
+    <string name="error_deleting_announcement">حدث خطأ أثناء حذف الإعلان</string>
+
+    <string name="profile_details">تفاصيل الملف الشخصي</string>
+
+    <string name="set_grade">تحديد العلامة</string>
+
+
+    <string name="course">المقرر</string>
+    <string name="participants">المشاركون</string>
+    <string name="grades">العلامات</string>
+    <string name="general">عام</string>
+    <string name="no_description_available">لا يوجد وصف متاح.</string>
+
+    <string name="teacher_value">الأستاذ: %1$s</string>
+
+
+    <string name="participants_coming_next_step">سيتم إضافة شاشة المشاركين في الخطوة التالية.</string>
+    <string name="grades_coming_later">سيتم إضافة شاشة العلامات لاحقاً.</string>
+    <string name="course_default_initial">م</string>
+
+    <string name="course_info">معلومات المقرر</string>
+    <string name="general_expanded">⌄  عام</string>
+
+    <string name="search_participants">ابحث عن مشاركين</string>
+    <string name="no_participants_found">لا يوجد مشاركون.</string>
+    <string name="failed_to_load_participants">فشل تحميل المشاركين.</string>
+    <string name="participants_parse_error">خطأ في قراءة بيانات المشاركين.</string>
+    <string name="course_id_not_found">رقم المقرر غير موجود.</string>
+
+    <string name="grade">العلامة</string>
+    <string name="your_grade">علامتك</string>
+    <string name="grade_not_available">لم يتم وضع العلامة بعد.</string>
+    <string name="loading_grade">جاري تحميل العلامة...</string>
+    <string name="failed_to_load_grade">فشل تحميل العلامة.</string>
+    <string name="grade_status_value">الحالة: %1$s</string>
+    <string name="course_code_value">رمز المقرر: %1$s</string>
+
+
+    <string name="participant_default_initial">ط</string>
+    <string name="participant_name_placeholder">اسم الطالب</string>
+    <string name="participant_email_placeholder">student@email.com</string>
+    <string name="participant_meta_placeholder">السنة - • -</string>
+    <string name="participant_clicked">المشارك: %1$s</string>
+    <string name="year_major_value">السنة %1$s • %2$s</string>
+
+
+    <string name="search_courses">ابحث في المقررات</string>
+
+    <string name="no_courses_found_yet">لا توجد مقررات حالياً.</string>
+    <string name="failed_to_load_courses">فشل تحميل المقررات.</string>
+    <string name="courses_parse_error">خطأ في قراءة بيانات المقررات.</string>
+    <string name="student_session_not_found">جلسة الطالب غير موجودة. الرجاء تسجيل الدخول مجدداً.</string>
+
+    <string name="profile_coming_soon">Profile coming soon</string>
+
+    <string name="student_profile">ملف الطالب</string>
+    <string name="profile_subtitle">معلومات حسابك كطالب</string>
+    <string name="full_name_value">الاسم الكامل: %1$s</string>
+    <string name="email_value">البريد الإلكتروني: %1$s</string>
+    <string name="role_value">الدور: %1$s</string>
+
+
+    <string name="major_value">الاختصاص: %1$s</string>
+
+    <string name="phone_value">الهاتف: %1$s</string>
+    <string name="failed_to_load_profile">فشل تحميل الملف الشخصي.</string>
+    <string name="profile_parse_error">خطأ في قراءة بيانات الملف الشخصي.</string>
+    <string name="logout_success">تم تسجيل الخروج بنجاح</string>
+
+    <string name="student_announcements">الإعلانات</string>
+
+    <string name="failed_to_load_announcements">فشل تحميل الإعلانات.</string>
+    <string name="announcements_parse_error">خطأ في قراءة بيانات الإعلانات.</string>
+    <string name="announcement_course_value">المقرر: %1$s</string>
+    <string name="announcement_by_value">بواسطة: %1$s</string>
+
+    <string name="course_announcements">إعلانات المقرر</string>
+    <string name="no_course_announcements_found">لا توجد إعلانات لهذا المقرر.</string>
+    <string name="failed_to_load_course_announcements">فشل تحميل إعلانات المقرر.</string>
+    <string name="course_announcements_parse_error">خطأ في قراءة إعلانات المقرر.</string>
+    <string name="announcement_by_date_value">بواسطة %1$s • %2$s</string>
+
+
+    <string name="available_courses">المقررات المتاحة</string>
+    <string name="enroll">تسجيل</string>
+
+    <string name="schedule_value">الوقت: %1$s</string>
+    <string name="no_schedule_available">لا يوجد وقت محدد</string>
+    <string name="course_enrolled_successfully">تم تسجيل المقرر بنجاح</string>
+    <string name="failed_to_enroll_course">فشل تسجيل المقرر</string>
+    <string name="available_courses_empty">لا توجد مقررات متاحة.</string>
+    <string name="failed_to_load_available_courses">فشل تحميل المقررات المتاحة.</string>
+    <string name="available_courses_parse_error">خطأ في قراءة المقررات المتاحة.</string>
+    <string name="enroll_success">تم تسجيل المقرر بنجاح.</string>
+    <string name="error_student_not_found">لم يتم العثور على الطالب.</string>
+    <string name="error_course_not_active">هذا المقرر غير مفعّل.</string>
+    <string name="error_course_not_for_faculty">هذا المقرر غير متاح لكليتك.</string>
+    <string name="error_course_not_for_major">هذا المقرر غير متاح لاختصاصك.</string>
+    <string name="error_course_not_for_study_year">هذا المقرر غير متاح لسنتك الدراسية.</string>
+    <string name="error_already_enrolled">أنت مسجّل مسبقاً في هذا المقرر.</string>
+    <string name="error_credit_limit_exceeded">تم تجاوز عدد الساعات المسموح بها.</string>
+    <string name="error_time_conflict">يوجد تعارض وقت مع مقرر آخر مسجّل.</string>
+    <string name="error_enrollment_failed">فشل تسجيل المقرر. حاول مرة أخرى.</string>
+    <string name="error_missing_fields">الحقول المطلوبة ناقصة.</string>
+    <string name="error_invalid_fields">الحقول المطلوبة غير صالحة.</string>
+
+    <string name="course_time_info">وقت المقرر</string>
+    <string name="select_day">اختر اليوم</string>
+    <string name="start_time_hint">وقت البداية، مثال 10:00</string>
+    <string name="end_time_hint">وقت النهاية، مثال 12:00</string>
+    <string name="room_hint">القاعة، مثال A101</string>
+    <string name="error_select_day">الرجاء اختيار اليوم</string>
+    <string name="error_invalid_time_format">استخدم صيغة الوقت HH:mm، مثال 10:00</string>
+    <string name="error_invalid_time_range">وقت البداية يجب أن يكون قبل وقت النهاية</string>
+    <string name="schedule_added_successfully">تمت إضافة وقت المقرر بنجاح</string>
+    <string name="error_adding_schedule">فشل إضافة وقت المقرر</string>
+
+    <string name="monday">الإثنين</string>
+    <string name="tuesday">الثلاثاء</string>
+    <string name="wednesday">الأربعاء</string>
+    <string name="thursday">الخميس</string>
+    <string name="friday">الجمعة</string>
+    <string name="saturday">السبت</string>
+    <string name="sunday">الأحد</string>
+
+
+    <string name="course_instructors">Course instructors</string>
+    <string name="add_instructor_to_course">Add instructor to course</string>
+    <string name="remove_instructor">Remove instructor</string>
+    <string name="confirm_remove_instructor_from_course">Remove this instructor from the course?</string>
+
+    <string name="instructor_removed_successfully">Instructor removed successfully.</string>
+    <string name="error_loading_course_instructors">Failed to load course instructors.</string>
+
+    <string name="error_removing_instructor">Failed to remove instructor.</string>
+    <string name="already_assigned">This instructor is already assigned to this course.</string>
+    <string name="instructor_time_conflict">Instructor has a time conflict with another course.</string>
+
+    <string name="enrollment_period">فترة التسجيل</string>
+    <string name="enrollment_start_hint">وقت بداية التسجيل</string>
+    <string name="enrollment_end_hint">وقت نهاية التسجيل</string>
+    <string name="error_invalid_enrollment_period">يجب أن يكون وقت نهاية التسجيل بعد وقت البداية</string>
+    <string name="error_select_enrollment_start">يرجى اختيار وقت بداية التسجيل</string>
+    <string name="error_select_enrollment_end">يرجى اختيار وقت نهاية التسجيل</string>
+    <string name="add_course_subtitle">أدخل تفاصيل المادة، فترة التسجيل، والجدول.</string>
+
+    <string name="teaching">التدريس</string>
+    <string name="my_teaching_courses">موادي للتدريس</string>
+    <string name="my_teaching_courses_subtitle">المواد التي تم تعيينك عليها كمدرّس.</string>
+    <string name="no_teaching_courses">لا توجد مواد للتدريس حالياً.</string>
+
+    <string name="open_course">فتح المادة</string>
+
+
+    <string name="grade_not_set">لم يتم تحديد العلامة بعد</string>
+    <string name="grade_value">العلامة: %1$s</string>
+    <string name="grade_hint">أدخل العلامة من 0 إلى 100</string>
+    <string name="result">النتيجة</string>
+    <string name="invalid_grade">علامة غير صالحة</string>
+    <string name="invalid_grade_range">يجب أن تكون العلامة بين 0 و 100</string>
+    <string name="error_updating_grade">فشل تحديث العلامة</string>
+    <string name="error_enrollment_not_found">لم يتم العثور على التسجيل</string>
+    <string name="set_grade_for">تحديد العلامة لـ %1$s</string>
+
+    <string name="add_schedule_time">إضافة وقت للمادة</string>
+    <string name="no_schedule_times_added">لم تتم إضافة أي وقت بعد</string>
+    <string name="error_add_at_least_one_schedule_time">يرجى إضافة وقت واحد على الأقل للمادة</string>
+    <string name="schedule_time_already_added">تمت إضافة هذا الوقت مسبقاً</string>
+
+    <string name="schedule_time_conflict">هذا الوقت يتعارض مع وقت آخر</string>
+    <string name="add">إضافة</string>
+
+    <string name="course_materials">مواد المقرر</string>
+    <string name="materials">المواد</string>
+    <string name="no_materials_found">لا توجد مواد حالياً</string>
+    <string name="add_material">إضافة مادة</string>
+    <string name="material_title">العنوان</string>
+    <string name="material_description">الوصف</string>
+    <string name="material_type">نوع المادة</string>
+    <string name="material_content_hint">نص الملاحظة أو رابط المادة</string>
+
+    <string name="open">فتح</string>
+
+    <string name="choose_pdf">اختيار ملف PDF</string>
+    <string name="pdf_selected">تم اختيار ملف PDF</string>
+    <string name="no_pdf_selected">لم يتم اختيار ملف PDF</string>
+    <string name="upload_pdf_first">يرجى اختيار ملف PDF أولاً</string>
+    <string name="failed_to_upload_pdf">فشل في رفع ملف PDF</string>
+    <string name="uploading_pdf">جاري رفع ملف PDF...</string>
+
+
+    <string name="material_added_successfully">تمت إضافة المادة بنجاح</string>
+    <string name="failed_to_add_material">فشل في إضافة المادة</string>
+    <string name="failed_to_load_materials">فشل في تحميل المواد</string>
+    <string name="failed_to_read_materials">فشل في قراءة المواد</string>
+    <string name="failed_to_delete_material">فشل في حذف المادة</string>
+    <string name="material_deleted_successfully">تم حذف المادة بنجاح</string>
+    <string name="delete_material_question">هل تريد حذف هذه المادة؟</string>
+    <string name="material_not_found">المادة غير موجودة</string>
+    <string name="course_not_found">المقرر غير موجود</string>
+    <string name="user_data_not_found">بيانات المستخدم غير موجودة</string>
+    <string name="no_link_found">لا يوجد رابط</string>
+    <string name="required">هذا الحقل مطلوب</string>
+    <string name="pdf">PDF</string>
+    <string name="note">ملاحظة</string>
+    <string name="video">فيديو</string>
+    <string name="link">رابط</string>
+
+
+    <string name="change_profile_image">تغيير صورة الملف الشخصي</string>
+    <string name="uploading_image">جاري رفع الصورة...</string>
+    <string name="failed_to_upload_image">فشل في رفع الصورة</string>
+    <string name="profile_image_updated">تم تحديث صورة الملف الشخصي بنجاح</string>
+    <string name="choose_image">اختيار صورة</string>
+
+    <string name="instructor_dashboard">لوحة تحكم المدرّس</string>
+    <string name="overview">نظرة عامة</string>
+]
+    <string name="manage_course_content">إدارة محتوى المقررات</string>
+    <string name="manage_course_content_hint">افتح مقرراتك لإضافة مواد، ملاحظات، ملفات PDF، فيديوهات وروابط مفيدة.</string>
+    <string name="publish_updates">نشر التحديثات</string>
+    <string name="publish_updates_hint">أنشئ الإعلانات وأبقِ الطلاب على اطلاع دائم.</string>
+
+    <string name="account_details">تفاصيل الحساب</string>
+    <string name="permission_level">مستوى الصلاحية</string>
+
+    <string name="chat">الدردشة</string>
+    <string name="chats">الدردشات</string>
+    <string name="private_chat">دردشة خاصة</string>
+    <string name="course_group_chat">دردشة المقرر</string>
+    <string name="type_message">اكتب رسالة...</string>
+    <string name="send">إرسال</string>
+    <string name="no_messages_yet">لا توجد رسائل بعد</string>
+    <string name="failed_to_send_message">فشل في إرسال الرسالة</string>
+    <string name="failed_to_load_chat">فشل في تحميل الدردشة</string>
+    <string name="course_chat">دردشة المقرر</string>
+    <string name="open_course_chat">فتح دردشة المقرر</string>
+    <string name="course_chat_hint">تواصل مع أعضاء المقرر بشكل مباشر.</string>
+    <string name="cannot_chat_with_yourself">لا يمكنك الدردشة مع نفسك</string>
+
+    <string name="open_course_group_chat">فتح دردشة المقرر</string>
+    <string name="conversations">Conversations</string>
+
+    <string name="no_conversations_found">No conversations yet</string>
+    <string name="start_chat_hint">Your private and course chats will appear here.</string>
+    <string name="last_message_empty">No messages yet</string>
+    <string name="chat_with_instructor">الدردشة مع المدرّس</string>
+    <string name="instructor_not_found">المدرّس غير موجود</string>
+    <string name="social">التواصل</string>
+    <string name="social_hint">شارك التحديثات مع طلاب كليتك.</string>
+    <string name="write_something">اكتب شيئاً...</string>
+    <string name="post">نشر</string>
+    <string name="no_posts_found">لا توجد منشورات بعد</string>
+    <string name="post_stats_value">%1$s إعجاب • %2$s تعليق</string>
+
+    <string name="like">إعجاب</string>
+    <string name="liked">تم الإعجاب</string>
+    <string name="comment">تعليق</string>
+    <string name="comments">التعليقات</string>
+    <string name="write_comment">اكتب تعليقاً...</string>
+    <string name="no_comments_found">لا توجد تعليقات بعد</string>
+    <string name="something_went_wrong">حدث خطأ ما</string>
+
+    <string name="add_post">إضافة منشور</string>
+    <string name="create_post">إنشاء منشور</string>
+    <string name="create_post_hint">ماذا تريد أن تشارك؟</string>
+    <string name="share_with_faculty">سيظهر منشورك لطلاب كليتك فقط.</string>
+    <string name="publish">نشر</string>
+
+    <string name="add_photo">إضافة صورة</string>
+    <string name="remove_photo">إزالة</string>
+    <string name="social_empty_hint">كن أول طالب يشارك شيئاً مع طلاب الكلية.</string>
+
+
+    <string name="notifications_hint">تظهر هنا أحدث الرسائل وتحديثات المقررات.</string>
+    <string name="no_notifications_found">لا توجد إشعارات بعد</string>
+    <string name="open_course_grades_hint">افتح تبويب العلامات في المقرر لعرض التحديث.</string>
+    <string name="open_course_announcements_hint">افتح إعلانات المقرر لعرض التحديث.</string>
+
+    <string name="menu">القائمة</string>
+    <string name="faculty_admin">مسؤول الكلية</string>
+
+    <string name="edit_course_info">تعديل معلومات المقرر</string>
+    <string name="edit_schedule">تعديل الجدول</string>
+    <string name="edit_course">تعديل المقرر</string>
+    <string name="select_schedule">اختر الجدول</string>
+
+    <string name="course_title_hint">عنوان المقرر</string>
+    <string name="course_code_hint">رمز المقرر</string>
+    <string name="course_description_hint">الوصف</string>
+    <string name="course_section_hint">الشعبة</string>
+    <string name="course_department_hint">القسم</string>
+    <string name="course_study_year_hint">السنة الدراسية</string>
+    <string name="course_credits_hint">عدد الساعات</string>
+    <string name="course_semester_hint">الفصل الدراسي</string>
+    <string name="course_academic_year_hint">السنة الأكاديمية، مثال: 2027/2028</string>
+
+    <string name="schedule_day_hint">اليوم</string>
+    <string name="schedule_start_time_hint">وقت البداية، مثال: 08:00</string>
+    <string name="schedule_end_time_hint">وقت النهاية، مثال: 10:00</string>
+    <string name="schedule_room_hint">القاعة، مثال: A1</string>
+
+    <string name="course_id_missing">معرّف المقرر غير موجود</string>
+    <string name="no_schedule_found">لا يوجد جدول لهذا المقرر</string>
+    <string name="error_reading_schedules">حدث خطأ أثناء قراءة الجداول</string>
+    <string name="error_loading_schedules">حدث خطأ أثناء تحميل الجداول</string>
+    <string name="invalid_schedule">الجدول غير صالح</string>
+
+    <string name="course_updated_successfully">تم تحديث المقرر بنجاح</string>
+    <string name="failed_update_course">فشل تحديث المقرر</string>
+    <string name="error_updating_course">حدث خطأ أثناء تحديث المقرر</string>
+
+    <string name="schedule_updated_successfully">تم تحديث الجدول بنجاح</string>
+    <string name="failed_update_schedule">فشل تحديث الجدول</string>
+    <string name="error_updating_schedule">حدث خطأ أثناء تحديث الجدول</string>
+
+    <string name="invalid_server_response">استجابة الخادم غير صالحة</string>
+    <string name="time_start_before_end">يجب أن يكون وقت البداية قبل وقت النهاية</string>
+
+    <string name="add_schedule">إضافة جدول</string>
+
+    <string name="failed_add_schedule">فشل إضافة الجدول</string>
+
+    <string name="student_assistant">مساعد الطالب</string>
+    <string name="student_assistant_subtitle">اسأل عن المقررات، الجدول، الأساتذة، والتسجيل.</string>
+    <string name="ask_student_assistant">اسأل أي شيء...</string>
+    <string name="student_assistant_welcome">مرحبًا! أنا مساعد الطالب في Unify. يمكنك أن تسألني عن مقرراتك، جدولك، أساتذتك، علاماتك أو التسجيل.</string>
+    <string name="student_assistant_error">عذرًا، لم أتمكن من الإجابة الآن.</string>
+    <string name="student_assistant_network_error">حدث خطأ في الاتصال. تحقق من الإنترنت وحاول مرة أخرى.</string>
+    <string name="error_user_not_found">لم يتم العثور على المستخدم. يرجى تسجيل الدخول مجددًا.</string>
+
+    <string name="student_assistant_button">مساعد الطالب</string>
+
+    <string name="error_enrollment_not_open">التسجيل غير مفتوح لهذا المقرر.</string>
+    <string name="error_enrollment_not_started">لم يبدأ التسجيل بعد.</string>
+    <string name="error_enrollment_closed">تم إغلاق التسجيل لهذا المقرر.</string>
+    <string name="error_enrollment_window_not_set">لم يتم تحديد فترة التسجيل لهذا المقرر.</string>
+
+    <string name="status_draft">مسودة</string>
+    <string name="status_enrollment_open">التسجيل مفتوح</string>
+    <string name="status_enrollment_closed">التسجيل مغلق</string>
+    <string name="status_in_progress">قيد التنفيذ</string>
+    <string name="status_completed">مكتمل</string>
+    <string name="status_dropped">منسحب</string>
+    <string name="result_not_published">لم يتم نشر النتيجة بعد</string>
+
+    <string name="course_period">فترة المقرر</string>
+    <string name="course_start_hint">تاريخ ووقت بداية المقرر</string>
+    <string name="course_end_hint">تاريخ ووقت نهاية المقرر</string>
+
+    <string name="error_select_course_start">يرجى اختيار تاريخ بداية المقرر</string>
+    <string name="error_select_course_end">يرجى اختيار تاريخ نهاية المقرر</string>
+    <string name="error_invalid_course_period">يجب أن يكون تاريخ نهاية المقرر بعد تاريخ بدايته</string>
+    <string name="error_enrollment_before_course">يجب أن ينتهي التسجيل قبل بداية المقرر</string>
+    <string name="error_invalid_academic_period">تاريخ بداية المقرر لا يطابق الفصل والسنة الأكاديمية</string>
+    <string name="status_upcoming">قريباً</string>
+
+
+    <string name="enrollment_not_open_yet">لم يفتح بعد</string>
+    <string name="enrollment_opens_on">يفتح: %1$s</string>
+
+
+    <string name="calendar_title_student">تقويمي</string>
+    <string name="calendar_subtitle_student">جدولك الشهري للمقررات</string>
+    <string name="calendar_title_instructor">تقويم التدريس</string>
+    <string name="calendar_subtitle_instructor">جدولك الشهري للتدريس</string>
+
+
+    <string name="error_failed_to_load_calendar">فشل تحميل التقويم</string>
+    <string name="error_no_calendar_data">لا توجد بيانات للتقويم</string>
+    <string name="error_no_active_courses">لا توجد مقررات نشطة</string>
+    <string name="error_reading_calendar">خطأ في قراءة التقويم</string>
+    <string name="error_no_courses_found">لا توجد مقررات</string>
+    <string name="error_no_schedules_found">لا توجد جداول</string>
+    <string name="error_user_session_not_found">لم يتم العثور على جلسة المستخدم</string>
+
+    <string name="calendar_no_courses_today">لا توجد مقررات في هذا اليوم</string>
+    <string name="room_prefix">القاعة: %1$s</string>
+    <string name="section_label">الشعبة: </string>
+    <string name="instructor_label">الأستاذ: </string>
+
+    <string name="open_teaching_calendar">تقويم التدريس</string>
+
+    <string name="avatar">صورة المستخدم</string>
+
+    <string-array name="calendar_day_initials">
+        <item>ح</item>
+        <item>ن</item>
+        <item>ث</item>
+        <item>ر</item>
+        <item>خ</item>
+        <item>ج</item>
+        <item>س</item>
+    </string-array>
+</resources>
+

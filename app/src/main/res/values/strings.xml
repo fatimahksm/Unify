@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- App -->
+    <string name="app_name">Unify</string>
+
+    <!-- Common -->
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="continue_text">Continue</string>
+    <string name="skip">Skip</string>
+    <string name="save">Save</string>
+    <string name="close">Close</string>
+
+    <!-- Auth -->
+    <string name="welcome">Welcome</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="full_name">Full Name</string>
+    <string name="student_id">Student ID</string>
+    <string name="forgot_password">Forgot Password?</string>
+
+
+    <!-- Home / General -->
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="settings">Settings</string>
+    <string name="notifications">Notifications</string>
+    <string name="search">Search</string>
+
+    <!-- Splash -->
+    <string name="splash_tagline">University App</string>
+
+    <!-- Validation / Messages -->
+
+
+    <string name="error_general">Something went wrong</string>
+
+    <string name="onboarding_title_1">Welcome to Unify</string>
+    <string name="onboarding_desc_1">Everything you need for university life in one smart app.</string>
+
+    <string name="onboarding_title_2">Stay connected live</string>
+    <string name="onboarding_desc_2">Chat with doctors, join student groups, and stay connected anytime.</string>
+
+    <string name="onboarding_title_3">Manage courses with ease</string>
+    <string name="onboarding_desc_3">Track courses, attendance, and important academic updates in one place.</string>
+
+    <string name="onboarding_title_4">Stay updated every day</string>
+    <string name="onboarding_desc_4">Get announcements, reminders, and useful campus tools without the chaos.</string>
+
+
+    <string name="get_started">Get Started</string>
+
+
+    <string name="login_title">Welcome back</string>
+    <string name="login_subtitle">Sign in to continue your university journey with Unify.</string>
+    <string name="email_hint">Enter your email</string>
+    <string name="password_hint">Enter your password</string>
+    <string name="dont_have_account">Don’t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="error_empty_email">Email is required</string>
+    <string name="error_empty_password">Password is required</string>
+    <string name="error_invalid_email">Please enter a valid email</string>
+
+    <string name="register_title">Create your account</string>
+    <string name="register_subtitle">Join Unify and make your university life simpler and smarter.</string>
+    <string name="create_account">Create Account</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="error_empty_full_name">Full name is required</string>
+    <string name="error_password_short">Password must be at least 6 characters</string>
+    <string name="error_confirm_password">Passwords do not match</string>
+
+    <string name="language_en">EN</string>
+    <string name="language_ar">AR</string>
+    <string name="switch_language">Switch language</string>
+
+    <string name="step_personal">Personal</string>
+    <string name="step_academic">Academic</string>
+    <string name="step_account">Account</string>
+
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="faculty">Faculty</string>
+    <string name="major">Major</string>
+    <string name="phone_number">Phone Number</string>
+
+    <string name="register_student">Register as Student</string>
+    <string name="register_student_subtitle">Create your student account and wait for faculty approval.</string>
+
+    <string name="error_empty_first_name">First name is required</string>
+    <string name="error_empty_last_name">Last name is required</string>
+    <string name="error_empty_student_id">Student ID is required</string>
+    <string name="error_empty_faculty">Faculty is required</string>
+    <string name="error_empty_major">Major is required</string>
+    <string name="error_empty_phone">Phone number is required</string>
+    <string name="error_select_faculty_first">Please select a faculty first</string>
+
+    <string name="error_account_pending_approval">Your account is pending faculty approval.</string>
+    <string name="loading">loading</string>
+
+    <string name="logout">Logout</string>
+    <string name="error_login_failed">Login failed</string>
+    <string name="error_user_data_not_found">User data not found</string>
+    <string name="error_failed_loading_user_data">Failed to load user data</string>
+    <string name="error_account_inactive">Your account is inactive.</string>
+    <string name="forgot_password_coming_soon">Forgot password is coming soon</string>
+    <string name="home_welcome">Welcome, %1$s</string>
+    <string name="home_email">Email: %1$s</string>
+    <string name="home_faculty">Faculty: %1$s</string>
+    <string name="home_major">Major: %1$s</string>
+
+    <string name="pending_approval_title">Registration Submitted</string>
+    <string name="pending_approval_message">Your account has been created successfully and is now waiting for faculty or admin approval. You will be able to sign in after your account is approved.</string>
+    <string name="back_to_login">Back to Login</string>
+
+
+    <string name="error_select_faculty">Please select a faculty</string>
+    <string name="error_select_major">Please select a major</string>
+    <string name="error_required">This field is required</string>
+
+
+    <string name="error_loading_faculties">Failed to load faculties</string>
+    <string name="error_loading_majors">Failed to load majors</string>
+    <string name="error_password_mismatch">Passwords do not match</string>
+    <string name="error_registration_timeout">Registration timed out. Please try again.</string>
+    <string name="error_failed_saving_user">Failed to save user data</string>
+    <string name="error_registration_failed">Registration failed</string>
+
+    <string name="announcements">Announcements</string>
+    <string name="courses">Courses</string>
+
+    <string name="home_subtitle">Welcome to your university space.</string>
+    <string name="announcements_coming_soon">Announcements screen coming soon</string>
+    <string name="courses_coming_soon">Courses screen coming soon</string>
+
+    <string name="profile_name_value">Name: %1$s</string>
+    <string name="profile_email_value">Email: %1$s</string>
+    <string name="profile_faculty_value">Faculty: %1$s</string>
+    <string name="profile_major_value">Major: %1$s</string>
+    <string name="profile_student_id_value">Student ID: %1$s</string>
+    <string name="profile_phone_value">Phone: %1$s</string>
+
+    <string name="home_hello">Hello</string>
+    <string name="home_hello_user">Hello, %1$s</string>
+    <string name="home_faculty_major">%1$s • %2$s</string>
+    <string name="home_quick_actions">Quick actions</string>
+    <string name="home_quick_actions_subtitle">Jump quickly to the most important parts of your student space.</string>
+
+    <string name="attendance">Attendance</string>
+    <string name="attendance_coming_soon">Attendance screen coming soon</string>
+
+    <string name="home_announcements_desc">Check the latest university news and updates.</string>
+    <string name="home_courses_desc">View your courses and academic information.</string>
+    <string name="home_attendance_desc">Track your attendance and session records.</string>
+    <string name="home_profile_desc">Open your profile and account details.</string>
+
+    <string name="announcements_subtitle">Latest academic and university updates for you.</string>
+    <string name="no_announcements_found">No announcements found yet.</string>
+    <string name="error_loading_announcements">Failed to load announcements</string>
+    <string name="general_announcement">General announcement</string>
+    <string name="pinned_announcement">Pinned announcement</string>
+    <string name="course_chip_value">Course: %1$s</string>
+
+    <string name="created_by_value">Created by: %1$s</string>
+    <string name="announcement_date_value">Date: %1$s</string>
+    <string name="not_available_short">N/A</string>
+
+    <string name="courses_subtitle">Your academic courses and class information.</string>
+    <string name="no_courses_found">No courses found yet.</string>
+    <string name="error_loading_courses">Failed to load courses</string>
+    <string name="section_value">Section: %1$s</string>
+    <string name="department_value">Department: %1$s</string>
+    <string name="faculty_value">Faculty: %1$s</string>
+    <string name="instructor_id_value">Instructor ID: %1$s</string>
+    <string name="academic_year_value">Academic Year: %1$s</string>
+    <string name="semester_value">Semester: %1$s</string>
+    <string name="course_id_value">Course ID: %1$s</string>
+
+    <string name="admin_dashboard">Dashboard</string>
+    <string name="admin_dashboard_subtitle">Manage approvals and core university data.</string>
+    <string name="admin_welcome_title">Welcome to the admin space</string>
+    <string name="admin_welcome_subtitle">Start by reviewing pending student registrations and managing the academic setup.</string>
+
+    <string name="pending_users">Pending Users</string>
+    <string name="pending_users_subtitle">Review and approve newly registered students.</string>
+    <string name="no_pending_users_found">No pending users found.</string>
+    <string name="error_loading_pending_users">Failed to load pending users</string>
+    <string name="approve">Approve</string>
+    <string name="user_approved_successfully">User approved successfully</string>
+    <string name="error_approving_user">Failed to approve user</string>
+
+    <string name="faculties">Faculties</string>
+    <string name="faculties_subtitle">Manage university faculties and academic structure.</string>
+    <string name="no_faculties_found">No faculties found.</string>
+    <string name="add_faculty">Add Faculty</string>
+    <string name="faculty_name">Faculty name</string>
+    <string name="faculty_added_successfully">Faculty added successfully</string>
+    <string name="error_adding_faculty">Failed to add faculty</string>
+    <string name="faculty_deleted_successfully">Faculty deleted successfully</string>
+    <string name="error_deleting_faculty">Failed to delete faculty</string>
+    <string name="faculty_id_value">Faculty ID: %1$s</string>
+
+    <string name="faculty_code">Faculty code</string>
+    <string name="faculty_code_value">Code: %1$s</string>
+    <string name="delete">Delete</string>
+
+    <string name="majors">Majors</string>
+    <string name="majors_subtitle">Manage majors and link them to faculties.</string>
+    <string name="no_majors_found">No majors found.</string>
+    <string name="add_major">Add Major</string>
+    <string name="major_name">Major name</string>
+    <string name="major_code">Major code</string>
+    <string name="select_faculty">Select faculty</string>
+    <string name="add_faculty_first">Please add a faculty first</string>
+    <string name="major_added_successfully">Major added successfully</string>
+    <string name="error_adding_major">Failed to add major</string>
+    <string name="major_deleted_successfully">Major deleted successfully</string>
+    <string name="error_deleting_major">Failed to delete major</string>
+    <string name="major_code_value">Code: %1$s</string>
+    <string name="major_faculty_value">Faculty: %1$s</string>
+    <string name="major_id_value">Major ID: %1$s</string>
+
+    <string name="reject">Reject</string>
+    <string name="reject_user">Reject User</string>
+    <string name="reject_user_confirmation">Are you sure you want to reject and delete this pending user?</string>
+    <string name="user_rejected_successfully">User rejected successfully</string>
+    <string name="error_rejecting_user">Failed to reject user</string>
+
+    <string name="faculty_admins">Faculty Admins</string>
+    <string name="faculty_admins_subtitle">Assign and manage faculty admins for each faculty.</string>
+    <string name="no_faculty_admins_found">No faculties found.</string>
+    <string name="assign_faculty_admin">Assign Faculty Admin</string>
+    <string name="faculty_admin_assigned_successfully">Faculty admin assigned successfully</string>
+    <string name="error_assigning_faculty_admin">Failed to assign faculty admin</string>
+    <string name="remove_faculty_admin">Remove Faculty Admin</string>
+    <string name="remove_faculty_admin_confirmation">Are you sure you want to remove this faculty admin assignment?</string>
+    <string name="faculty_admin_removed_successfully">Faculty admin removed successfully</string>
+    <string name="error_removing_faculty_admin">Failed to remove faculty admin</string>
+    <string name="assigned_admin_value">Assigned admin: %1$s</string>
+    <string name="no_faculty_admin_assigned">No faculty admin assigned</string>
+    <string name="select_user">Select user</string>
+    <string name="error_select_user">Please select a user</string>
+    <string name="remove">Remove</string>
+    <string name="unknown_user">Unknown user</string>
+    <string name="no_eligible_users_found">No eligible users available</string>
+
+    <string name="add_faculty_admin">Add Faculty Admin</string>
+    <string name="faculty_admin_added_successfully">Faculty admin added successfully</string>
+    <string name="error_adding_faculty_admin">Failed to add faculty admin</string>
+    <string name="faculty_admin_deleted_successfully">Faculty admin deleted successfully</string>
+    <string name="error_deleting_faculty_admin">Failed to delete faculty admin</string>
+    <string name="employee_id">Employee ID</string>
+    <string name="employee_id_value">Employee ID: %1$s</string>
+
+    <string name="error_loading_users">Error loading users</string>
+    <string name="error_loading_faculty_admins">Error loading faculty admins</string>
+
+    <string name="error_email_already_exists">This email is already used.</string>
+    <string name="error_faculty_admin_already_exists">This faculty already has a manager.</string>
+    <string name="error_checking_faculty_admin">Error while checking faculty manager data.</string>
+    <string name="confirm_delete_faculty_admin">Are you sure you want to delete this faculty manager?</string>
+
+    <string name="error_faculty_name_already_exists">This faculty name already exists.</string>
+    <string name="error_faculty_code_already_exists">This faculty code already exists.</string>
+    <string name="error_checking_faculty_data">Error while checking faculty data.</string>
+    <string name="error_cannot_delete_faculty_with_admin">You cannot delete a faculty that already has a manager.</string>
+    <string name="confirm_delete_faculty">Are you sure you want to delete this faculty?</string>
+
+
+    <string name="loading_dashboard">Loading dashboard...</string>
+    <string name="dashboard_loaded_successfully">Dashboard loaded successfully.</string>
+    <string name="error_loading_dashboard">Error while loading dashboard data.</string>
+    <string name="students">Students</string>
+    <string name="instructors">Instructors</string>
+    <string name="no_pending_students_found">No pending students found.</string>
+    <string name="error_faculty_not_assigned">No faculty is assigned to this manager.</string>
+
+    <string name="error_major_name_already_exists">This major name already exists in your faculty.</string>
+    <string name="error_major_code_already_exists">This major code already exists in your faculty.</string>
+    <string name="error_checking_major_data">Error while checking major data.</string>
+    <string name="confirm_delete_major">Are you sure you want to delete this major?</string>
+    <string name="role">Role</string>
+
+    <string name="error_empty_study_year">Please select a study year.</string>
+
+    <string name="add_instructor">Add Instructor</string>
+    <string name="no_instructors_found">No instructors found.</string>
+    <string name="error_loading_instructors">Error loading instructors.</string>
+    <string name="error_checking_instructor_data">Error while checking instructor data.</string>
+    <string name="instructor_added_successfully">Instructor added successfully.</string>
+    <string name="error_adding_instructor">Error adding instructor.</string>
+    <string name="confirm_delete_instructor">Are you sure you want to delete this instructor?</string>
+    <string name="instructor_deleted_successfully">Instructor deleted successfully.</string>
+    <string name="error_deleting_instructor">Error deleting instructor.</string>
+
+
+    <string name="add_course">Add Course</string>
+    <string name="course_title">Course Title</string>
+    <string name="course_code">Course Code</string>
+    <string name="select_major">Select Major</string>
+    <string name="academic_year">Academic Year</string>
+    <string name="description">Description</string>
+    <string name="section">Section</string>
+    <string name="semester">Semester</string>
+    <string name="study_year">Study Year</string>
+    <string name="error_select_study_year">Please select a study year.</string>
+
+    <string name="assign_instructor">Assign Instructor</string>
+    <string name="select_instructor">Select Instructor</string>
+    <string name="error_select_instructor">Please select an instructor.</string>
+    <string name="instructor_assigned_successfully">Instructor assigned successfully.</string>
+    <string name="error_assigning_instructor">Error assigning instructor.</string>
+
+    <string name="instructor_value">Instructor: %1$s</string>
+    <string name="study_year_value">Study Year: %1$s</string>
+
+
+    <string name="error_course_code_already_exists">This course code already exists in your faculty.</string>
+    <string name="error_checking_course_data">Error while checking course data.</string>
+    <string name="course_added_successfully">Course added successfully.</string>
+    <string name="error_adding_course">Error adding course.</string>
+    <string name="add_major_first">Please add a major first.</string>
+    <string name="error_loading_profile">Error while loading profile.</string>
+    <string name="edit">edit</string>
+    <string name="hello_blank_fragment"> hello</string>
+
+    <string name="credits">Credits</string>
+    <string name="error_invalid_credits">Credits must be greater than 0</string>
+
+    <string name="temporary_password">Temporary Password</string>
+    <string name="faculty_admin_created">Faculty admin created successfully</string>
+    <string name="copy_credentials">Copy credentials</string>
+    <string name="credentials">Credentials</string>
+    <string name="complete_profile_required">Please complete your profile first</string>
+
+    <string name="complete_profile">Complete Profile</string>
+    <string name="complete_profile_subtitle">Please complete your information and choose a new password before continuing.</string>
+    <string name="save_profile">Save Profile</string>
+    <string name="new_password">New Password</string>
+    <string name="profile_completed_successfully">Profile completed successfully</string>
+    <string name="error_update_password">Could not update password. Please log in again and try.</string>
+    <string name="error_complete_profile">Could not complete profile. Please try again.</string>
+
+
+    <string name="course_already_exists">This course already exists for the same section, semester, and academic year.</string>
+    <string name="current_faculty">Current faculty</string>
+
+    <string name="credits_must_be_positive">Credits must be greater than 0</string>
+    <string name="error_network">Network error. Please try again.</string>
+
+    <string name="course_basic_info">Basic information</string>
+    <string name="course_schedule_info">Schedule information</string>
+    <string name="course_description_info">Description</string>
+
+
+    <string name="temporary_password_message">Give this password to the instructor. They must change it after login:</string>
+
+    <string name="select_course">Select course</string>
+    <string name="error_select_course">Please select a course</string>
+
+    <string name="edit_major">Edit Major</string>
+    <string name="error_updating_major">Error updating major</string>
+
+
+    <string name="passwords_do_not_match">Passwords do not match</string>
+
+    <string name="error_completing_profile">Error completing profile</string>
+
+
+    <string name="welcome_user">Welcome, %1$s 👋</string>
+    <string name="instructor">Instructor</string>
+    <string name="instructor_home_subtitle">Manage your courses, attendance, and announcements from one place.</string>
+
+    <string name="quick_actions">Quick actions</string>
+    <string name="instructor_quick_actions_hint">Open your courses to manage students, start attendance sessions, and publish announcements.</string>
+
+    <string name="my_courses">My Courses</string>
+    <string name="instructor_courses_subtitle">View the courses assigned to you and manage classroom activities.</string>
+    <string name="major_not_available">Major not available</string>
+    <string name="credits_value">%1$s credits</string>
+
+    <string name="manage_students">Manage Students</string>
+    <string name="course_students">Course Students</string>
+    <string name="course_students_subtitle">Students enrolled in this course.</string>
+    <string name="no_students_found">No students found</string>
+    <string name="error_loading_students">Error loading students</string>
+    <string name="error_course_not_found">Course not found</string>
+    <string name="unknown_student">Unknown student</string>
+    <string name="student_number_value">Student No: %1$s</string>
+
+    <string name="enrolled_students">Enrolled students</string>
+
+    <string name="course_announcements_subtitle">Create and view announcements for this course.</string>
+
+    <string name="add_announcement">Add Announcement</string>
+    <string name="announcement_title">Announcement title</string>
+    <string name="announcement_body">Announcement body</string>
+
+    <string name="error_creating_announcement">Error creating announcement</string>
+    <string name="pinned">Pinned</string>
+
+    <string name="confirm_delete_announcement">Are you sure you want to delete this announcement?</string>
+    <string name="error_deleting_announcement">Error deleting announcement</string>
+
+    <string name="profile_details">Profile details</string>
+
+    <string name="set_grade">Set Grade</string>
+
+    <string name="course">Course</string>
+    <string name="participants">Participants</string>
+    <string name="grades">Grades</string>
+    <string name="general">General</string>
+    <string name="no_description_available">No description available.</string>
+
+    <string name="teacher_value">Teacher: %1$s</string>
+
+
+    <string name="participants_coming_next_step">Participants screen will be added in the next step.</string>
+    <string name="grades_coming_later">Grades screen will be added later.</string>
+    <string name="course_default_initial">C</string>
+
+    <string name="course_info">Course information</string>
+
+    <string name="general_expanded">⌄  General</string>
+
+    <string name="search_participants">Search participants</string>
+    <string name="no_participants_found">No participants found.</string>
+    <string name="failed_to_load_participants">Failed to load participants.</string>
+    <string name="participants_parse_error">Participants parse error.</string>
+    <string name="course_id_not_found">Course id not found.</string>
+
+    <string name="grade">Grade</string>
+    <string name="your_grade">Your grade</string>
+    <string name="grade_not_available">Grade not available yet.</string>
+    <string name="loading_grade">Loading grade...</string>
+    <string name="failed_to_load_grade">Failed to load grade.</string>
+    <string name="grade_status_value">Status: %1$s</string>
+    <string name="course_code_value">Course code: %1$s</string>
+
+
+    <string name="participant_default_initial">S</string>
+    <string name="participant_name_placeholder">Student Name</string>
+    <string name="participant_email_placeholder">student@email.com</string>
+    <string name="participant_meta_placeholder">Year - • -</string>
+    <string name="participant_clicked">Participant: %1$s</string>
+    <string name="year_major_value">Year %1$s • %2$s</string>
+
+
+    <string name="search_courses">Search courses</string>
+
+    <string name="no_courses_found_yet">No courses found yet.</string>
+    <string name="failed_to_load_courses">Failed to load courses.</string>
+    <string name="courses_parse_error">Courses parse error.</string>
+    <string name="student_session_not_found">Student session not found. Please login again.</string>
+
+    <string name="profile_coming_soon">Profile coming soon</string>
+
+    <string name="student_profile">Student Profile</string>
+    <string name="profile_subtitle">Your student account information</string>
+    <string name="full_name_value">Full name: %1$s</string>
+    <string name="email_value">Email: %1$s</string>
+    <string name="role_value">Role: %1$s</string>
+
+
+    <string name="major_value">Major: %1$s</string>
+
+    <string name="phone_value">Phone: %1$s</string>
+    <string name="failed_to_load_profile">Failed to load profile.</string>
+    <string name="profile_parse_error">Profile parse error.</string>
+    <string name="logout_success">Logged out successfully</string>
+
+    <string name="student_announcements">Announcements</string>
+
+    <string name="failed_to_load_announcements">Failed to load announcements.</string>
+    <string name="announcements_parse_error">Announcements parse error.</string>
+    <string name="announcement_course_value">Course: %1$s</string>
+    <string name="announcement_by_value">By: %1$s</string>
+
+    <string name="course_announcements">Course announcements</string>
+    <string name="no_course_announcements_found">No announcements for this course.</string>
+    <string name="failed_to_load_course_announcements">Failed to load course announcements.</string>
+    <string name="course_announcements_parse_error">Course announcements parse error.</string>
+    <string name="announcement_by_date_value">By %1$s • %2$s</string>
+
+
+    <string name="available_courses">Available courses</string>
+    <string name="enroll">Enroll</string>
+
+    <string name="schedule_value">Schedule: %1$s</string>
+    <string name="no_schedule_available">No schedule available</string>
+    <string name="course_enrolled_successfully">Course enrolled successfully</string>
+    <string name="failed_to_enroll_course">Failed to enroll course</string>
+    <string name="available_courses_empty">No available courses found.</string>
+    <string name="failed_to_load_available_courses">Failed to load available courses.</string>
+    <string name="available_courses_parse_error">Available courses parse error.</string>
+
+    <string name="enroll_success">Course enrolled successfully.</string>
+    <string name="error_student_not_found">Student not found.</string>
+
+    <string name="error_course_not_active">This course is not active.</string>
+    <string name="error_course_not_for_faculty">This course is not available for your faculty.</string>
+    <string name="error_course_not_for_major">This course is not available for your major.</string>
+    <string name="error_course_not_for_study_year">This course is not available for your study year.</string>
+    <string name="error_already_enrolled">You are already enrolled in this course.</string>
+    <string name="error_credit_limit_exceeded">Credit limit exceeded.</string>
+    <string name="error_time_conflict">This course conflicts with another enrolled course.</string>
+    <string name="error_enrollment_failed">Enrollment failed. Please try again.</string>
+    <string name="error_missing_fields">Missing required fields.</string>
+    <string name="error_invalid_fields">Invalid required fields.</string>
+
+    <string name="course_time_info">Course Time</string>
+    <string name="select_day">Select day</string>
+    <string name="start_time_hint">Start time, e.g. 10:00</string>
+    <string name="end_time_hint">End time, e.g. 12:00</string>
+    <string name="room_hint">Room, e.g. A101</string>
+    <string name="error_select_day">Please select a day</string>
+    <string name="error_invalid_time_format">Use time format HH:mm, example 10:00</string>
+    <string name="error_invalid_time_range">Start time must be before end time</string>
+    <string name="schedule_added_successfully">Schedule added successfully</string>
+    <string name="error_adding_schedule">Failed to add schedule</string>
+
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+
+
+    <string name="course_instructors">Course instructors</string>
+    <string name="add_instructor_to_course">Add instructor to course</string>
+    <string name="remove_instructor">Remove instructor</string>
+    <string name="confirm_remove_instructor_from_course">Remove this instructor from the course?</string>
+
+    <string name="instructor_removed_successfully">Instructor removed successfully.</string>
+    <string name="error_loading_course_instructors">Failed to load course instructors.</string>
+
+    <string name="error_removing_instructor">Failed to remove instructor.</string>
+    <string name="already_assigned">This instructor is already assigned to this course.</string>
+    <string name="instructor_time_conflict">Instructor has a time conflict with another course.</string>
+
+    <string name="enrollment_period">Enrollment Period</string>
+    <string name="enrollment_start_hint">Enrollment start date and time</string>
+    <string name="enrollment_end_hint">Enrollment end date and time</string>
+    <string name="error_invalid_enrollment_period">Enrollment end must be after enrollment start</string>
+    <string name="error_select_enrollment_start">Please select enrollment start time</string>
+    <string name="error_select_enrollment_end">Please select enrollment end time</string>
+
+    <string name="add_course_subtitle">Create course details, enrollment period, and schedule.</string>
+
+    <string name="teaching">Teaching</string>
+    <string name="my_teaching_courses">My Teaching Courses</string>
+    <string name="my_teaching_courses_subtitle">Courses where you are assigned as an instructor.</string>
+    <string name="no_teaching_courses">No teaching courses yet.</string>
+
+    <string name="open_course">Open course</string>
+
+
+    <string name="grade_not_set">Grade not set</string>
+    <string name="grade_value">Grade: %1$s</string>
+    <string name="grade_hint">Enter grade from 0 to 100</string>
+    <string name="result">Result</string>
+    <string name="invalid_grade">Invalid grade</string>
+    <string name="invalid_grade_range">Grade must be between 0 and 100</string>
+    <string name="error_updating_grade">Failed to update grade</string>
+    <string name="error_enrollment_not_found">Enrollment not found</string>
+    <string name="set_grade_for">Set grade for %1$s</string>
+
+    <string name="add_schedule_time">Add schedule time</string>
+    <string name="no_schedule_times_added">No schedule times added yet</string>
+    <string name="error_add_at_least_one_schedule_time">Please add at least one schedule time</string>
+    <string name="schedule_time_already_added">This schedule time is already added</string>
+
+    <string name="schedule_time_conflict">This schedule time conflicts with another time</string>
+    <string name="add">Add</string>
+
+    <string name="course_materials">Course Materials</string>
+    <string name="materials">Materials</string>
+    <string name="no_materials_found">No materials found</string>
+    <string name="add_material">Add Material</string>
+    <string name="material_title">Title</string>
+    <string name="material_description">Description</string>
+    <string name="material_type">Material Type</string>
+    <string name="material_content_hint">Note text or link URL</string>
+
+    <string name="open">Open</string>
+
+    <string name="choose_pdf">Choose PDF</string>
+    <string name="pdf_selected">PDF selected</string>
+    <string name="no_pdf_selected">No PDF selected</string>
+    <string name="upload_pdf_first">Please choose a PDF first</string>
+    <string name="failed_to_upload_pdf">Failed to upload PDF</string>
+    <string name="uploading_pdf">Uploading PDF...</string>
+
+
+    <string name="material_added_successfully">Material added successfully</string>
+    <string name="failed_to_add_material">Failed to add material</string>
+    <string name="failed_to_load_materials">Failed to load materials</string>
+    <string name="failed_to_read_materials">Failed to read materials</string>
+    <string name="failed_to_delete_material">Failed to delete material</string>
+    <string name="material_deleted_successfully">Material deleted successfully</string>
+    <string name="delete_material_question">Delete this material?</string>
+    <string name="material_not_found">Material not found</string>
+    <string name="course_not_found">Course not found</string>
+    <string name="user_data_not_found">User data not found</string>
+    <string name="no_link_found">No link found</string>
+    <string name="required">Required</string>
+    <string name="pdf">PDF</string>
+    <string name="note">NOTE</string>
+    <string name="video">VIDEO</string>
+    <string name="link">LINK</string>
+
+
+    <string name="change_profile_image">Change Profile Image</string>
+    <string name="uploading_image">Uploading image...</string>
+    <string name="failed_to_upload_image">Failed to upload image</string>
+    <string name="profile_image_updated">Profile image updated successfully</string>
+    <string name="choose_image">Choose Image</string>
+
+    <string name="instructor_dashboard">Instructor Dashboard</string>
+    <string name="overview">Overview</string>
+
+    <string name="manage_course_content">Manage course content</string>
+    <string name="manage_course_content_hint">Open your courses to add materials, notes, PDFs, videos, and useful links.</string>
+    <string name="publish_updates">Publish updates</string>
+    <string name="publish_updates_hint">Create announcements and keep your students informed.</string>
+
+    <string name="account_details">Account Details</string>
+    <string name="permission_level">Permission Level</string>
+
+    <string name="chat">Chat</string>
+    <string name="chats">Chats</string>
+    <string name="private_chat">Private Chat</string>
+
+    <string name="type_message">Type a message...</string>
+    <string name="send">Send</string>
+    <string name="no_messages_yet">No messages yet</string>
+    <string name="failed_to_send_message">Failed to send message</string>
+    <string name="failed_to_load_chat">Failed to load chat</string>
+
+    <string name="course_chat">Course Chat</string>
+    <string name="open_course_chat">Open Course Chat</string>
+    <string name="course_chat_hint">Chat with your course members in real time.</string>
+
+    <string name="course_group_chat">Course Group Chat</string>
+    <string name="open_course_group_chat">Open Course Group Chat</string>
+    <string name="conversations">Conversations</string>
+    <string name="no_conversations_found">No conversations yet</string>
+    <string name="start_chat_hint">Your private and course chats will appear here.</string>
+    <string name="last_message_empty">No messages yet</string>
+    <string name="instructor_not_found">Instructor not found</string>
+    <string name="cannot_chat_with_yourself">You cannot chat with yourself</string>
+    <string name="chat_with_instructor">Chat with Instructor</string>
+
+    <string name="social">Social</string>
+    <string name="social_hint">Share updates with students from your faculty.</string>
+    <string name="write_something">Write something...</string>
+    <string name="post">Post</string>
+    <string name="no_posts_found">No posts yet</string>
+    <string name="post_stats_value">%1$s likes • %2$s comments</string>
+
+    <string name="like">Like</string>
+    <string name="liked">Liked</string>
+    <string name="comment">Comment</string>
+    <string name="comments">Comments</string>
+    <string name="write_comment">Write a comment...</string>
+    <string name="no_comments_found">No comments yet</string>
+    <string name="something_went_wrong">Something went wrong</string>
+
+    <string name="add_post">Add Post</string>
+    <string name="create_post">Create Post</string>
+    <string name="create_post_hint">What would you like to share?</string>
+    <string name="share_with_faculty">Your post will be visible to students from your faculty.</string>
+    <string name="publish">Publish</string>
+
+    <string name="add_photo">Add Photo</string>
+    <string name="remove_photo">Remove</string>
+    <string name="social_empty_hint">Be the first student to share something with your faculty.</string>
+
+
+
+    <string name="menu">Menu</string>
+    <string name="faculty_admin">Faculty Admin</string>
+
+    <string name="notifications_hint">Your latest messages and course updates appear here.</string>
+    <string name="no_notifications_found">No notifications yet</string>
+    <string name="open_course_grades_hint">Open the course grades tab to view the update.</string>
+    <string name="open_course_announcements_hint">Open the course announcements to view the update.</string>
+
+    <string name="edit_course_info">Edit course info</string>
+    <string name="edit_schedule">Edit schedule</string>
+    <string name="edit_course">Edit course</string>
+    <string name="select_schedule">Select schedule</string>
+
+    <string name="course_title_hint">Course title</string>
+    <string name="course_code_hint">Course code</string>
+    <string name="course_description_hint">Description</string>
+    <string name="course_section_hint">Section</string>
+    <string name="course_department_hint">Department</string>
+    <string name="course_study_year_hint">Study year</string>
+    <string name="course_credits_hint">Credits</string>
+    <string name="course_semester_hint">Semester</string>
+    <string name="course_academic_year_hint">Academic year, ex: 2027/2028</string>
+
+    <string name="schedule_day_hint">Day</string>
+    <string name="schedule_start_time_hint">Start time, ex: 08:00</string>
+    <string name="schedule_end_time_hint">End time, ex: 10:00</string>
+    <string name="schedule_room_hint">Room, ex: A1</string>
+
+    <string name="course_id_missing">Course ID is missing</string>
+    <string name="no_schedule_found">No schedule found</string>
+    <string name="error_reading_schedules">Error reading schedules</string>
+    <string name="error_loading_schedules">Error loading schedules</string>
+    <string name="invalid_schedule">Invalid schedule</string>
+
+    <string name="course_updated_successfully">Course updated successfully</string>
+    <string name="failed_update_course">Failed to update course</string>
+    <string name="error_updating_course">Error updating course</string>
+
+    <string name="schedule_updated_successfully">Schedule updated successfully</string>
+    <string name="failed_update_schedule">Failed to update schedule</string>
+    <string name="error_updating_schedule">Error updating schedule</string>
+
+    <string name="invalid_server_response">Invalid server response</string>
+    <string name="time_start_before_end">Start time must be before end time</string>
+
+    <string name="add_schedule">Add schedule</string>
+
+    <string name="failed_add_schedule">Failed to add schedule</string>
+
+    <string name="student_assistant">Student Assistant</string>
+    <string name="student_assistant_subtitle">Ask about your courses, schedule, instructors, and enrollment.</string>
+    <string name="ask_student_assistant">Ask anything...</string>
+    <string name="student_assistant_welcome">Hi! I’m your Unify Student Assistant. Ask me about your courses, schedule, instructors, grades, or enrollment.</string>
+    <string name="student_assistant_error">Sorry, I could not answer right now.</string>
+    <string name="student_assistant_network_error">Network error. Please check your connection and try again.</string>
+    <string name="error_user_not_found">User not found. Please sign in again.</string>
+
+    <string name="student_assistant_button">Student Assistant</string>
+
+    <string name="error_enrollment_not_open">Enrollment is not open for this course.</string>
+    <string name="error_enrollment_not_started">Enrollment has not started yet.</string>
+    <string name="error_enrollment_closed">Enrollment is closed for this course.</string>
+    <string name="error_enrollment_window_not_set">Enrollment period is not configured for this course.</string>
+
+    <string name="status_draft">Draft</string>
+    <string name="status_enrollment_open">Enrollment open</string>
+    <string name="status_enrollment_closed">Enrollment closed</string>
+    <string name="status_in_progress">In progress</string>
+    <string name="status_completed">Completed</string>
+    <string name="status_dropped">Dropped</string>
+    <string name="result_not_published">Result not published yet</string>
+
+    <string name="course_period">Course period</string>
+    <string name="course_start_hint">Course start date and time</string>
+    <string name="course_end_hint">Course end date and time</string>
+
+    <string name="error_select_course_start">Please select course start date</string>
+    <string name="error_select_course_end">Please select course end date</string>
+    <string name="error_invalid_course_period">Course end date must be after course start date</string>
+    <string name="error_enrollment_before_course">Enrollment must close before the course starts</string>
+    <string name="error_invalid_academic_period">Course start date does not match semester and academic year</string>
+    <string name="status_upcoming">Upcoming</string>
+
+    <string name="enrollment_not_open_yet">Not open yet</string>
+    <string name="enrollment_opens_on">Opens: %1$s</string>
+
+
+    <string name="calendar_title_student">My Calendar</string>
+    <string name="calendar_subtitle_student">Your monthly course schedule</string>
+    <string name="calendar_title_instructor">Teaching Calendar</string>
+    <string name="calendar_subtitle_instructor">Your monthly teaching schedule</string>
+
+
+    <string name="error_failed_to_load_calendar">Failed to load calendar</string>
+    <string name="error_no_calendar_data">No calendar data found</string>
+    <string name="error_no_active_courses">No active courses found</string>
+    <string name="error_reading_calendar">Error reading calendar</string>
+    <string name="error_no_courses_found">No courses found</string>
+    <string name="error_no_schedules_found">No schedules found</string>
+    <string name="error_user_session_not_found">User session not found</string>
+
+    <string name="avatar">User avatar</string>
+    <string name="calendar_no_courses_today">No courses on this day</string>
+    <string name="room_prefix">Room: %1$s</string>
+    <string name="section_label">Section: </string>
+    <string name="instructor_label">Instructor: </string>
+
+    <string name="open_teaching_calendar">My Teaching Calendar</string>
+
+    <string-array name="calendar_day_initials">
+        <item>S</item>
+        <item>M</item>
+        <item>T</item>
+        <item>W</item>
+        <item>T</item>
+        <item>F</item>
+        <item>S</item>
+    </string-array>
+</resources>

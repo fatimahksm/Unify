@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/unify_background"
+    android:fillViewport="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/course_basic_info"
+            android:textColor="@color/unify_primary"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editCourseTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/course_title" />
+
+        <EditText
+            android:id="@+id/editCourseCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/course_code"
+            android:inputType="textCapCharacters" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoMajorForCourse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:focusable="false"
+            android:hint="@string/select_major"
+            android:inputType="none" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoStudyYearForCourse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:focusable="false"
+            android:hint="@string/study_year"
+            android:inputType="none" />
+
+        <EditText
+            android:id="@+id/editCourseCredits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/credits"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/course_schedule_info"
+            android:textColor="@color/unify_primary"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editCourseSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/section" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoSemesterForCourse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:focusable="false"
+            android:hint="@string/semester"
+            android:inputType="none" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoAcademicYearForCourse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:focusable="false"
+            android:hint="@string/academic_year"
+            android:inputType="none" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/enrollment_period"
+            android:textColor="@color/unify_primary"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editEnrollmentStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:focusable="false"
+            android:hint="@string/enrollment_start_hint"
+            android:inputType="none" />
+
+        <EditText
+            android:id="@+id/editEnrollmentEnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:focusable="false"
+            android:hint="@string/enrollment_end_hint"
+            android:inputType="none" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/course_time_info"
+            android:textColor="@color/unify_primary"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoDayForCourse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:focusable="false"
+            android:hint="@string/select_day"
+            android:inputType="none" />
+
+        <EditText
+            android:id="@+id/editStartTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:focusable="false"
+            android:hint="@string/start_time_hint"
+            android:inputType="none" />
+
+        <EditText
+            android:id="@+id/editEndTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:focusable="false"
+            android:hint="@string/end_time_hint"
+            android:inputType="none" />
+
+        <EditText
+            android:id="@+id/editRoom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/room_hint" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/course_description_info"
+            android:textColor="@color/unify_primary"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editCourseDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="top"
+            android:hint="@string/description"
+            android:inputType="textMultiLine"
+            android:minLines="3" />
+
+    </LinearLayout>
+</ScrollView>

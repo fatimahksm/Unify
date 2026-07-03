@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Spacing -->
+    <dimen name="space_xs">4dp</dimen>
+    <dimen name="space_sm">8dp</dimen>
+    <dimen name="space_md">16dp</dimen>
+    <dimen name="space_lg">24dp</dimen>
+    <dimen name="space_xl">32dp</dimen>
+    <dimen name="space_2xl">40dp</dimen>
+
+    <!-- Radius -->
+    <dimen name="radius_sm">8dp</dimen>
+    <dimen name="radius_md">12dp</dimen>
+    <dimen name="radius_lg">16dp</dimen>
+    <dimen name="radius_xl">24dp</dimen>
+
+    <!-- Text sizes -->
+    <dimen name="text_xs">12sp</dimen>
+    <dimen name="text_sm">14sp</dimen>
+    <dimen name="text_md">16sp</dimen>
+    <dimen name="text_lg">20sp</dimen>
+    <dimen name="text_xl">24sp</dimen>
+    <dimen name="text_2xl">32sp</dimen>
+
+    <!-- Common component sizes -->
+    <dimen name="button_height">52dp</dimen>
+    <dimen name="input_height">56dp</dimen>
+    <dimen name="icon_sm">18dp</dimen>
+    <dimen name="icon_md">24dp</dimen>
+    <dimen name="icon_lg">32dp</dimen>
+
+    <!-- Layout helpers -->
+    <dimen name="screen_padding">20dp</dimen>
+    <dimen name="card_padding">16dp</dimen>
+    <dimen name="section_spacing">24dp</dimen>
+
+</resources>

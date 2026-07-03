@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Brand Colors -->
+    <color name="unify_blue">#1A204E</color>
+    <color name="unify_primary">#1A204E</color>
+    <color name="unify_blue_dark">#162E6E</color>
+    <color name="unify_blue_light">#DCE6FF</color>
+
+    <color name="unify_gold">#D4AF37</color>
+    <color name="unify_gold_soft">#E6C76A</color>
+    <color name="unify_gold_light">#F7E7A8</color>
+
+    <color name="announcement_card_stroke">#E8EAF0</color>
+    <color name="announcement_pinned_color">#D97706</color>
+    <color name="announcement_chip_bg">#EEF4FF</color>
+    <!-- Neutrals -->
+    <color name="unify_background">#F8FAFC</color>
+    <color name="unify_surface">#FFFFFF</color>
+    <color name="unify_border">#D9E2EC</color>
+
+    <!-- Text -->
+    <color name="unify_text_primary">#1E293B</color>
+    <color name="unify_text_secondary">#64748B</color>
+    <color name="unify_text_on_dark">#FFFFFF</color>
+
+    <!-- Status -->
+    <color name="unify_success">#16A34A</color>
+    <color name="unify_error">#DC2626</color>
+    <color name="unify_warning">#F59E0B</color>
+
+    <!-- Base -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+
+</resources>

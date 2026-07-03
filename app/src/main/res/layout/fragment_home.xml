@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="24dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="24dp">
+
+        <TextView
+            android:id="@+id/textHomeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/home"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textWelcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/home_hello"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            android:paddingBottom="6dp" />
+
+        <TextView
+            android:id="@+id/textFacultyMajor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/home_subtitle"
+            android:textSize="15sp"
+            android:paddingBottom="20dp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            app:strokeWidth="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_quick_actions"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:paddingBottom="6dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_quick_actions_subtitle"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/cardAnnouncements"
+                layout="@layout/item_home_action_card" />
+
+            <include
+                android:id="@+id/cardCourses"
+                layout="@layout/item_home_action_card" />
+
+            <include
+                android:id="@+id/cardAttendance"
+                layout="@layout/item_home_action_card" />
+
+            <include
+                android:id="@+id/cardProfile"
+                layout="@layout/item_home_action_card" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

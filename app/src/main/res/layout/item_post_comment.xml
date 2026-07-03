@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    app:cardBackgroundColor="@color/unify_surface"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="0dp"
+    app:strokeColor="@color/unify_border"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="14dp">
+
+        <FrameLayout
+            android:layout_width="42dp"
+            android:layout_height="42dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageCommentAvatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/unify_background"
+                android:contentDescription="@string/avatar"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                app:shapeAppearanceOverlay="@style/UnifyAvatarCircle"
+                app:strokeColor="@color/unify_border"
+                app:strokeWidth="1dp" />
+
+            <TextView
+                android:id="@+id/textCommentAvatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_course_badge"
+                android:gravity="center"
+                android:text="S"
+                android:textColor="@color/unify_primary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textCommentAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Student"
+                android:textColor="@color/unify_text_primary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textCommentBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Comment"
+                android:textColor="@color/unify_text_primary"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textCommentDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="-"
+                android:textColor="@color/unify_text_secondary"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

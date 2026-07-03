@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/unify_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/screen_padding">
+
+        <TextView
+            android:id="@+id/textFacultyAdminProfileTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/profile"
+            android:textColor="@color/unify_text_primary"
+            android:textSize="@dimen/text_xl"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textFacultyAdminProfileSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xs"
+            android:text="@string/profile_subtitle"
+            android:textColor="@color/unify_text_secondary"
+            android:textSize="@dimen/text_sm" />
+
+        <!-- Profile photo + name card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_lg"
+            app:cardBackgroundColor="@color/unify_surface"
+            app:cardCornerRadius="22dp"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/unify_border"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <FrameLayout
+                    android:layout_width="112dp"
+                    android:layout_height="112dp"
+                    android:layout_gravity="center_horizontal">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/imageFacultyAdminProfile"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/baseline_person_24"
+                        android:background="@android:color/transparent"
+                        android:padding="0dp"
+                        app:cornerFamily="rounded"
+                        app:cornerSize="50%"
+                        app:strokeColor="@color/unify_blue"
+                        app:strokeWidth="3dp" />
+
+                    <TextView
+                        android:id="@+id/textFacultyAdminProfileInitial"
+                        android:layout_width="112dp"
+                        android:layout_height="112dp"
+                        android:gravity="center"
+                        android:text="@string/participant_default_initial"
+                        android:textColor="@color/white"
+                        android:textSize="34sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/buttonFacultyAdminChangePhoto"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_gravity="bottom|end"
+                        android:background="@color/unify_blue"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/textFacultyAdminName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_lg"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/unify_text_primary"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textFacultyAdminEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_xs"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/unify_text_secondary"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textFacultyAdminRole"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_md"
+                    android:background="@drawable/bg_course_chip"
+                    android:paddingStart="14dp"
+                    android:paddingTop="6dp"
+                    android:paddingEnd="14dp"
+                    android:paddingBottom="6dp"
+                    android:text="FACULTY_ADMIN"
+                    android:textColor="@color/unify_blue"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <ProgressBar
+                    android:id="@+id/progressBarFacultyAdminProfile"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="@dimen/space_md"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Profile details card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_lg"
+            app:cardBackgroundColor="@color/unify_surface"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/unify_border"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="22dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile_details"
+                    android:textColor="@color/unify_text_primary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/space_md"
+                    android:layout_marginBottom="@dimen/space_md"
+                    android:background="@color/unify_border" />
+
+                <TextView
+                    android:id="@+id/textFacultyAdminFaculty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="@color/unify_text_secondary"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!--
+            Teaching calendar button — visible only when this faculty admin
+            is also assigned as an instructor on at least one course.
+            Hidden by default; shown from FacultyAdminProfileFragment.java
+            after GET_INSTRUCTOR_COURSES returns a non-empty list.
+        -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonFacultyAdminOpenCalendar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="@dimen/space_lg"
+            android:text="@string/open_teaching_calendar"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:backgroundTint="@color/unify_blue"
+            app:cornerRadius="@dimen/radius_lg"
+            android:visibility="gone" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonFacultyAdminLogout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="@dimen/space_md"
+            android:text="@string/logout"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:backgroundTint="@color/unify_error"
+            app:cornerRadius="@dimen/radius_lg" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,34 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Unify" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+
+    <style name="Theme.Unify" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Brand colors -->
+        <item name="colorPrimary">@color/unify_gold_soft</item>
+        <item name="colorOnPrimary">@color/unify_text_primary</item>
+
+        <item name="colorSecondary">@color/unify_gold</item>
+        <item name="colorOnSecondary">@color/unify_text_primary</item>
+
+        <!-- Background / surface -->
+        <item name="android:colorBackground">@color/unify_blue_dark</item>
+        <item name="colorSurface">@color/unify_blue</item>
+        <item name="colorOnSurface">@color/white</item>
+
+        <!-- Status / navigation bars -->
+        <item name="android:statusBarColor">@color/unify_blue_dark</item>
+        <item name="android:navigationBarColor">@color/unify_blue_dark</item>
+
+        <item name="android:windowBackground">@color/unify_blue_dark</item>
+    </style>
+
+    <style name="Theme.Unify.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/unify_blue_dark</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/unify_splash_logo</item>
+        <item name="postSplashScreenTheme">@style/Theme.Unify</item>
+    </style>
+
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootCreatePostDialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/unify_surface"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/textCreatePostTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/create_post"
+        android:textColor="@color/unify_text_primary"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textCreatePostSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/share_with_faculty"
+        android:textColor="@color/unify_text_secondary"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/editDialogPostContent"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/bg_dashboard_card"
+        android:gravity="top|start"
+        android:hint="@string/write_something"
+        android:inputType="textMultiLine|textCapSentences"
+        android:maxLines="7"
+        android:padding="14dp"
+        android:textColor="@color/unify_text_primary"
+        android:textColorHint="@color/unify_text_secondary"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/imagePostPreview"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_dashboard_card"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonPickPostImage"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:text="@string/add_photo"
+            android:textAllCaps="false" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="1dp" />
+
+        <Button
+            android:id="@+id/buttonRemovePostImage"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/unify_surface"
+            android:text="@string/remove_photo"
+            android:textAllCaps="false"
+            android:textColor="@color/unify_text_secondary"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonCancelPost"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:backgroundTint="@color/unify_surface"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/unify_text_secondary" />
+
+        <Button
+            android:id="@+id/buttonPublishPost"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/publish"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/editFacultyAdminFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/first_name"
+            android:inputType="textCapWords"
+            android:layout_marginBottom="14dp" />
+
+        <EditText
+            android:id="@+id/editFacultyAdminLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/last_name"
+            android:inputType="textCapWords"
+            android:layout_marginBottom="14dp" />
+
+        <EditText
+            android:id="@+id/editFacultyAdminEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="14dp" />
+
+        <EditText
+            android:id="@+id/editFacultyAdminEmployeeId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/employee_id"
+            android:inputType="text"
+            android:layout_marginBottom="14dp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoFacultyForAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/select_faculty"
+            android:inputType="none"
+            android:focusable="false"
+            android:clickable="true" />
+
+    </LinearLayout>
+</ScrollView>

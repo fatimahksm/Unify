@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/unify_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/screen_padding">
+
+        <TextView
+            android:id="@+id/textAdminProfileTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/profile"
+            android:textColor="@color/unify_text_primary"
+            android:textSize="@dimen/text_xl"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textAdminProfileSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xs"
+            android:text="@string/profile_subtitle"
+            android:textColor="@color/unify_text_secondary"
+            android:textSize="@dimen/text_sm" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_lg"
+            android:background="@drawable/bg_admin_dashboard_header"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <FrameLayout
+                android:layout_width="112dp"
+                android:layout_height="112dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageAdminProfile"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/baseline_person_24"
+                    android:background="@android:color/transparent"
+                    android:padding="0dp"
+
+                    app:cornerFamily="rounded"
+                    app:cornerSize="50%"
+
+                    app:strokeColor="@color/unify_blue"
+                    app:strokeWidth="3dp" />
+
+
+
+                <TextView
+                    android:id="@+id/textAdminInitial"
+                    android:layout_width="112dp"
+                    android:layout_height="112dp"
+                    android:gravity="center"
+                    android:text="A"
+                    android:textColor="@color/unify_primary"
+                    android:textSize="38sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/buttonAdminChangePhoto"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="bottom|end"
+                    android:background="@color/unify_gold"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textAdminName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="-"
+                android:textColor="@android:color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textAdminEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="-"
+                android:textColor="#EAF4FF"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/textAdminRole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_dashboard_status_pill"
+                android:paddingStart="14dp"
+                android:paddingTop="6dp"
+                android:paddingEnd="14dp"
+                android:paddingBottom="6dp"
+                android:text="SUPER_ADMIN"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBarAdminProfile"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/space_md"
+            android:visibility="gone" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_lg"
+            app:cardBackgroundColor="@color/unify_surface"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/unify_border"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="22dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/account_details"
+                    android:textColor="@color/unify_text_primary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/space_md"
+                    android:layout_marginBottom="@dimen/space_md"
+                    android:background="@color/unify_border" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/full_name"
+                    android:textColor="@color/unify_text_secondary"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/textAdminNameDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="14dp"
+                    android:text="-"
+                    android:textColor="@color/unify_text_primary"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email"
+                    android:textColor="@color/unify_text_secondary"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/textAdminEmailDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="14dp"
+                    android:text="-"
+                    android:textColor="@color/unify_text_primary"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/permission_level"
+                    android:textColor="@color/unify_text_secondary"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/textAdminRoleDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="-"
+                    android:textColor="@color/unify_primary"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonAdminLogout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="@dimen/space_lg"
+            android:text="@string/logout"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:backgroundTint="@color/unify_error"
+            app:cornerRadius="@dimen/radius_lg" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/admin_nav_dashboard"
+        android:icon="@drawable/baseline_dashboard_24"
+        android:title="@string/admin_dashboard" />
+
+    <item
+        android:id="@+id/admin_nav_faculties"
+        android:icon="@drawable/baseline_corporate_fare_24"
+        android:title="@string/faculties" />
+
+    <item
+        android:id="@+id/admin_nav_faculty_admins"
+        android:icon="@drawable/baseline_manage_accounts_24"
+        android:title="@string/faculty_admins" />
+
+    <item
+        android:id="@+id/admin_nav_profile"
+        android:icon="@drawable/baseline_person_24"
+        android:title="@string/profile" />
+
+</menu>

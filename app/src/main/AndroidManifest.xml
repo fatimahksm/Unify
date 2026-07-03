@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Unify"
+        android:usesCleartextTraffic="true"
+        >
+        <activity
+            android:name=".activities.StudentChatBotActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.PostCommentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.NotificationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ConversationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SingleChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.StudentCourseMaterialsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.InstructorCourseMaterialsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AddCourseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.StudentCourseDetailsActivity"
+            android:exported="false"
+            android:parentActivityName=".activities.StudentMainActivity" />
+        <activity
+            android:name=".activities.InstructorCourseStudentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.InstructorCourseDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.CompleteFacultyAdminProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.InstructorMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.FacultyAdminMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AdminMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.CourseDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AnnouncementDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.StudentMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.PendingApprovalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.OnboardingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.InstructorAnnouncementsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Unify.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
