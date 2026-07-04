@@ -219,13 +219,22 @@ public class FacultiesFragment extends Fragment implements FacultyAdapter.Facult
 
                     showLoading(false);
 
-                    String cleanResponse = response == null ? "" : response.trim();
-                    Toast.makeText(requireContext(), cleanResponse, Toast.LENGTH_SHORT).show();
+                    String cleanResponse = response == null ? "" : response.trim().toLowerCase(Locale.ROOT);
 
-                    if (cleanResponse.toLowerCase(Locale.ROOT).contains("added")
-                            || cleanResponse.toLowerCase(Locale.ROOT).contains("success")) {
+                    if (cleanResponse.contains("added") || cleanResponse.contains("success")) {
+                        Toast.makeText(
+                                requireContext(),
+                                getString(R.string.faculty_added_successfully),
+                                Toast.LENGTH_SHORT
+                        ).show();
                         dialog.dismiss();
                         loadFaculties();
+                    } else {
+                        Toast.makeText(
+                                requireContext(),
+                                getString(R.string.error_adding_faculty),
+                                Toast.LENGTH_SHORT
+                        ).show();
                     }
                 },
                 error -> {
@@ -235,7 +244,7 @@ public class FacultiesFragment extends Fragment implements FacultyAdapter.Facult
 
                     Toast.makeText(
                             requireContext(),
-                            "Error adding faculty",
+                            getString(R.string.error_adding_faculty),
                             Toast.LENGTH_SHORT
                     ).show();
                 }
@@ -368,13 +377,22 @@ public class FacultiesFragment extends Fragment implements FacultyAdapter.Facult
 
                     showLoading(false);
 
-                    String cleanResponse = response == null ? "" : response.trim();
-                    Toast.makeText(requireContext(), cleanResponse, Toast.LENGTH_SHORT).show();
+                    String cleanResponse = response == null ? "" : response.trim().toLowerCase(Locale.ROOT);
 
-                    if (cleanResponse.toLowerCase(Locale.ROOT).contains("updated")
-                            || cleanResponse.toLowerCase(Locale.ROOT).contains("success")) {
+                    if (cleanResponse.contains("updated") || cleanResponse.contains("success")) {
+                        Toast.makeText(
+                                requireContext(),
+                                getString(R.string.faculty_updated_successfully),
+                                Toast.LENGTH_SHORT
+                        ).show();
                         dialog.dismiss();
                         loadFaculties();
+                    } else {
+                        Toast.makeText(
+                                requireContext(),
+                                getString(R.string.error_updating_faculty),
+                                Toast.LENGTH_SHORT
+                        ).show();
                     }
                 },
                 error -> {
@@ -384,7 +402,7 @@ public class FacultiesFragment extends Fragment implements FacultyAdapter.Facult
 
                     Toast.makeText(
                             requireContext(),
-                            "Error updating faculty",
+                            getString(R.string.error_updating_faculty),
                             Toast.LENGTH_SHORT
                     ).show();
                 }
@@ -416,11 +434,14 @@ public class FacultiesFragment extends Fragment implements FacultyAdapter.Facult
 
                     showLoading(false);
 
-                    String cleanResponse = response == null ? "" : response.trim();
-                    Toast.makeText(requireContext(), cleanResponse, Toast.LENGTH_SHORT).show();
+                    String cleanResponse = response == null ? "" : response.trim().toLowerCase(Locale.ROOT);
 
-                    if (cleanResponse.toLowerCase(Locale.ROOT).contains("deleted")
-                            || cleanResponse.toLowerCase(Locale.ROOT).contains("success")) {
+                    if (cleanResponse.contains("deleted") || cleanResponse.contains("success")) {
+                        Toast.makeText(
+                                requireContext(),
+                                getString(R.string.faculty_deleted_successfully),
+                                Toast.LENGTH_SHORT
+                        ).show();
                         facultyList.remove(position);
                         facultyDocIds.remove(position);
                         adapter.notifyItemRemoved(position);
@@ -431,6 +452,12 @@ public class FacultiesFragment extends Fragment implements FacultyAdapter.Facult
                             recyclerFaculties.setVisibility(View.VISIBLE);
                             textEmpty.setVisibility(View.GONE);
                         }
+                    } else {
+                        Toast.makeText(
+                                requireContext(),
+                                getString(R.string.error_deleting_faculty),
+                                Toast.LENGTH_SHORT
+                        ).show();
                     }
                 },
                 error -> {
@@ -440,7 +467,7 @@ public class FacultiesFragment extends Fragment implements FacultyAdapter.Facult
 
                     Toast.makeText(
                             requireContext(),
-                            "Error deleting faculty",
+                            getString(R.string.error_deleting_faculty),
                             Toast.LENGTH_SHORT
                     ).show();
                 }

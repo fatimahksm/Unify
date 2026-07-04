@@ -14,6 +14,9 @@
     <string name="save">Save</string>
     <string name="close">Close</string>
 
+    <string name="faculty_updated_successfully">Faculty updated successfully</string>
+    <string name="error_updating_faculty">Failed to update faculty</string>
+
     <!-- Auth -->
     <string name="welcome">Welcome</string>
     <string name="login">Login</string>

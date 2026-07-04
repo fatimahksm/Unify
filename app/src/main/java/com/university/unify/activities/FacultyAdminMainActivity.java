@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.view.Gravity;
 import android.widget.ImageButton;
 import android.widget.TextView;
-
+import com.university.unify.fragments.faculty_admin.FacultyAdminMajorsFragment;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -93,14 +93,7 @@ public class FacultyAdminMainActivity extends AppCompatActivity {
 
     private void openMajors() {
         textToolbarTitle.setText(getString(R.string.majors));
-
-        /*
-         * If you already have FacultyAdminMajorsFragment, use:
-         * loadFragment(new FacultyAdminMajorsFragment());
-         *
-         * For now, this keeps the app safe and avoids compile errors.
-         */
-        loadFragment(new FacultyAdminCoursesFragment());
+        loadFragment(new FacultyAdminMajorsFragment());
     }
 
     private void openTeaching() {

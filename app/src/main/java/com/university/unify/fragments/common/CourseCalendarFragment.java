@@ -155,7 +155,7 @@ public class CourseCalendarFragment extends Fragment {
             return;
         }
 
-        if (role.equals("INSTRUCTOR")) {
+        if (role.equals("INSTRUCTOR") || role.equals("FACULTY_ADMIN")) {
             textTitle.setText(R.string.calendar_title_instructor);
             textSubtitle.setText(R.string.calendar_subtitle_instructor);
             loadInstructorCourses();
@@ -358,6 +358,8 @@ public class CourseCalendarFragment extends Fragment {
                 event.setSection(course.optString("section", ""));
                 event.setInstructorName(course.optString("instructor_name", ""));
                 event.setDayName(normalizedDay);
+                event.setCourseStartAt(course.optString("course_start_at", ""));
+                event.setCourseEndAt(course.optString("course_end_at", ""));
 
                 event.setTimeText((!TextUtils.isEmpty(startTime) && !TextUtils.isEmpty(endTime))
                         ? trimSeconds(startTime) + "-" + trimSeconds(endTime)
@@ -470,7 +472,7 @@ public class CourseCalendarFragment extends Fragment {
 
     private void fillDayCell(LinearLayout cell, Calendar date, int dayNumber, Calendar today) {
         String dayName = getDayName(date);
-        List<CalendarEventModel> events = getEventsForDay(dayName);
+        List<CalendarEventModel> events = getEventsForDate(date, dayName);
 
         boolean hasCourses = events != null && !events.isEmpty();
         boolean isToday    = isSameDay(date, today);
@@ -645,7 +647,7 @@ public class CourseCalendarFragment extends Fragment {
 
         Calendar today    = Calendar.getInstance();
         String todayName  = getDayName(today);
-        int todayCourses  = getEventsForDay(todayName).size();
+        int todayCourses  = getEventsForDate(today, todayName).size();
         int totalCourses  = countUniqueCourses();
         int activeDays    = countActiveDays();
 
@@ -678,12 +680,34 @@ public class CourseCalendarFragment extends Fragment {
         return days.size();
     }
 
-    private List<CalendarEventModel> getEventsForDay(String dayName) {
+    private List<CalendarEventModel> getEventsForDate(Calendar date, String dayName) {
+        String dateKey = String.format(Locale.ROOT, "%04d-%02d-%02d",
+                date.get(Calendar.YEAR),
+                date.get(Calendar.MONTH) + 1,
+                date.get(Calendar.DAY_OF_MONTH));
+
         List<CalendarEventModel> events = new ArrayList<>();
         for (CalendarEventModel e : allEvents) {
-            if (safe(e.getDayName()).equalsIgnoreCase(dayName)) events.add(e);
+            if (!safe(e.getDayName()).equalsIgnoreCase(dayName)) continue;
+            if (!isWithinCoursePeriod(e, dateKey)) continue;
+            events.add(e);
         }
         return events;
+    }
+
+    /*
+     * Dates come as "yyyy-MM-dd HH:mm:ss"; comparing the "yyyy-MM-dd"
+     * prefix lexicographically is enough. Events with no course dates
+     * are always shown.
+     */
+    private boolean isWithinCoursePeriod(CalendarEventModel e, String dateKey) {
+        String start = safe(e.getCourseStartAt());
+        String end   = safe(e.getCourseEndAt());
+
+        if (start.length() >= 10 && dateKey.compareTo(start.substring(0, 10)) < 0) return false;
+        if (end.length() >= 10 && dateKey.compareTo(end.substring(0, 10)) > 0) return false;
+
+        return true;
     }
 
     // ─────────────────────────────────────────────────────────────────────────

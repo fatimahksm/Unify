@@ -12,6 +12,25 @@ public class CalendarEventModel {
     private String roomText;
     private String fullScheduleText;
 
+    private String courseStartAt;
+    private String courseEndAt;
+
+    public String getCourseStartAt() {
+        return courseStartAt;
+    }
+
+    public void setCourseStartAt(String courseStartAt) {
+        this.courseStartAt = safe(courseStartAt);
+    }
+
+    public String getCourseEndAt() {
+        return courseEndAt;
+    }
+
+    public void setCourseEndAt(String courseEndAt) {
+        this.courseEndAt = safe(courseEndAt);
+    }
+
     public CalendarEventModel() {
     }
 
